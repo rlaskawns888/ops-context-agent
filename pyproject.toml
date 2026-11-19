@@ -1,0 +1,33 @@
+[project]
+name = "ops-context-agent"
+version = "0.1.0"
+description = "사내 IT 운영 Context Agent (모노레포 루트)"
+requires-python = "==3.12.*"
+dependencies = []
+
+[tool.uv]
+package = false
+
+[tool.uv.workspace]
+members = ["services/*", "packages/*"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "ruff>=0.6",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+extend-exclude = ["data"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["common", "agent_api", "mcp_server", "ops_api", "ingest"]
+
+[tool.pytest.ini_options]
+testpaths = ["services", "packages"]
+addopts = "-ra --import-mode=importlib"
