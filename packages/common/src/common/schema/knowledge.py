@@ -10,6 +10,7 @@ Azure OpenAI 구조화 출력(strict) 호환을 위해:
 - 값 제약(공백 금지 등)은 JSON 스키마 키워드가 아니라 validator로 검사한다
 """
 
+from collections.abc import Sequence
 from datetime import date
 from enum import StrEnum
 from typing import Annotated, Any, Literal, Self
@@ -239,17 +240,24 @@ class ExtractionResult(_StrictModel):
 
     @model_validator(mode="after")
     def _check_relation_endpoints(self) -> Self:
-        known = {(e.type, e.canonical_name) for e in self.entities}
-        for i, rel in enumerate(self.relations):
-            for role, key in (
-                ("source", (rel.source_type, rel.source_name)),
-                ("target", (rel.target_type, rel.target_name)),
-            ):
-                if key not in known:
-                    raise ValueError(
-                        f"relations[{i}].{role} ({key[0]}, {key[1]!r})가 entities에 없습니다"
-                    )
+        check_relation_endpoints(self.entities, self.relations)
         return self
+
+
+def check_relation_endpoints(
+    entities: Sequence[_EntityBase], relations: Sequence[ExtractedRelation]
+) -> None:
+    """relations가 가리키는 (type, canonical_name)이 entities에 있는지 확인한다."""
+    known = {(e.type, e.canonical_name) for e in entities}
+    for i, rel in enumerate(relations):
+        for role, key in (
+            ("source", (rel.source_type, rel.source_name)),
+            ("target", (rel.target_type, rel.target_name)),
+        ):
+            if key not in known:
+                raise ValueError(
+                    f"relations[{i}].{role} ({key[0]}, {key[1]!r})가 entities에 없습니다"
+                )
 
 
 # ---------------------------------------------------------------------------

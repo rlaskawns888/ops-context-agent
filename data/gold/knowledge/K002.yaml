@@ -1,0 +1,48 @@
+id: K002
+title: 비밀번호 5회 오류로 잠긴 AD 계정은 공식 절차로 잠금 해제한다
+scenario_type: official_procedure
+render_as: [guide, slack]
+
+entities:
+  - type: System
+    canonical_name: AD 계정
+    aliases: [AD, 도메인 계정, 사내 계정]
+    evidence: 사내 PC와 메일 로그인에는 모두 AD 계정을 사용합니다.
+    description: 사내 PC·메일·업무 시스템 로그인에 쓰는 통합 계정
+
+  - type: Error
+    canonical_name: 계정 잠금
+    aliases: [AD 계정 잠김, 로그인 잠금]
+    evidence: 비밀번호를 5회 연속 틀리면 AD 계정이 자동으로 잠깁니다.
+    code: null
+    symptom: 비밀번호 5회 오류 후 로그인 불가
+
+  - type: Solution
+    canonical_name: 잠금 해제 절차
+    aliases: [계정 잠금 해제, 잠금 해제 신청]
+    evidence: 계정이 잠기면 셀프서비스 포털에서 본인 인증 후 잠금 해제를 신청하면 됩니다.
+    steps:
+      - 다른 기기에서 셀프서비스 포털에 접속한다
+      - 휴대폰 문자로 본인 인증을 한다
+      - 계정 잠금 해제를 신청한다
+      - 해제 완료 문자를 받은 뒤 새 비밀번호로 로그인한다
+    knowledge_type: official
+    valid_from: null
+    valid_to: null
+
+relations:
+  - source_type: Error
+    source_name: 계정 잠금
+    relation_type: OCCURS_IN
+    target_type: System
+    target_name: AD 계정
+    evidence: 비밀번호를 5회 연속 틀리면 AD 계정이 자동으로 잠깁니다.
+
+  - source_type: Error
+    source_name: 계정 잠금
+    relation_type: RESOLVED_BY
+    target_type: Solution
+    target_name: 잠금 해제 절차
+    evidence: 계정이 잠기면 셀프서비스 포털에서 본인 인증 후 잠금 해제를 신청하면 됩니다.
+
+policies: []

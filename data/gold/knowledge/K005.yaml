@@ -1,0 +1,54 @@
+id: K005
+title: VPN은 MFA에 의존하고, MFA 인증 실패는 담당인 보안운영팀에 문의한다
+scenario_type: multihop
+render_as: [slack, minutes]
+
+entities:
+  - type: System
+    canonical_name: VPN
+    aliases: [사내 VPN, 원격접속]
+    evidence: VPN에 로그인하면 마지막 단계에서 MFA 인증을 거칩니다.
+    description: 외부에서 사내망에 접속하기 위한 원격접속 시스템
+
+  - type: System
+    canonical_name: MFA
+    aliases: [다중 인증, 2차 인증, OTP 인증]
+    evidence: MFA는 비밀번호 외에 휴대폰 앱 승인을 한 번 더 요구하는 인증 시스템입니다.
+    description: 휴대폰 앱 승인으로 본인을 한 번 더 확인하는 다중 인증 시스템
+
+  - type: Team
+    canonical_name: 보안운영팀
+    aliases: [보안운영, 보안팀]
+    evidence: MFA 시스템은 보안운영팀이 운영하고 있습니다.
+    channel: "#sec-ops"
+
+  - type: Error
+    canonical_name: MFA 인증 실패
+    aliases: [2차 인증 실패, MFA 승인 실패]
+    evidence: 휴대폰 앱에서 승인을 눌러도 MFA 인증 실패 메시지가 나오며 로그인이 안 됩니다.
+    code: null
+    symptom: 앱에서 승인해도 인증 실패 메시지가 나오며 로그인 불가
+
+relations:
+  - source_type: System
+    source_name: VPN
+    relation_type: DEPENDS_ON
+    target_type: System
+    target_name: MFA
+    evidence: VPN에 로그인하면 마지막 단계에서 MFA 인증을 거칩니다.
+
+  - source_type: System
+    source_name: MFA
+    relation_type: OWNED_BY
+    target_type: Team
+    target_name: 보안운영팀
+    evidence: MFA 시스템은 보안운영팀이 운영하고 있습니다.
+
+  - source_type: Error
+    source_name: MFA 인증 실패
+    relation_type: OCCURS_IN
+    target_type: System
+    target_name: MFA
+    evidence: 휴대폰 앱에서 승인을 눌러도 MFA 인증 실패 메시지가 나오며 로그인이 안 됩니다.
+
+policies: []

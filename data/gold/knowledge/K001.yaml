@@ -1,0 +1,47 @@
+id: K001
+title: VPN 접속 시 E-102 오류는 PC 재부팅으로 해결된다 (암묵지)
+scenario_type: tacit_fix
+render_as: [slack, ticket]
+
+entities:
+  - type: System
+    canonical_name: VPN
+    aliases: [사내 VPN, 원격접속]
+    evidence: 재택 근무자는 사내 VPN으로 접속해야 내부 시스템을 쓸 수 있습니다.
+    description: 외부에서 사내망에 접속하기 위한 원격접속 시스템
+
+  - type: Error
+    canonical_name: E-102
+    aliases: [E102, VPN 102 오류]
+    evidence: VPN에 접속하려고 하면 E-102 오류가 뜨면서 연결이 끊깁니다.
+    code: E-102
+    symptom: VPN 접속 실패
+
+  - type: Solution
+    canonical_name: PC 재부팅
+    aliases: [재부팅]
+    evidence: E-102가 뜨면 PC를 재부팅하고 다시 접속하면 대부분 바로 해결됩니다.
+    steps:
+      - 실행 중인 VPN 클라이언트를 종료한다
+      - PC를 재부팅한다
+      - VPN 클라이언트를 다시 실행해 접속한다
+    knowledge_type: tacit
+    valid_from: null
+    valid_to: null
+
+relations:
+  - source_type: Error
+    source_name: E-102
+    relation_type: OCCURS_IN
+    target_type: System
+    target_name: VPN
+    evidence: VPN에 접속하려고 하면 E-102 오류가 뜨면서 연결이 끊깁니다.
+
+  - source_type: Error
+    source_name: E-102
+    relation_type: RESOLVED_BY
+    target_type: Solution
+    target_name: PC 재부팅
+    evidence: E-102가 뜨면 PC를 재부팅하고 다시 접속하면 대부분 바로 해결됩니다.
+
+policies: []

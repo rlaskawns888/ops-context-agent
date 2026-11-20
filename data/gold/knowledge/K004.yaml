@@ -1,0 +1,103 @@
+id: K004
+title: 정규직 해외 VPN 접속이 2026년부터 허용에서 사전 승인 필요로 바뀌었다
+scenario_type: policy_revision
+render_as: [guide, minutes]
+
+# 개정 정책은 canonical_name에 시행일을 붙여 구분한다 (design.md 1.7)
+entities:
+  - type: UserGroup
+    canonical_name: 정규직
+    aliases: [정규직 직원, 임직원]
+    evidence: 이 정책은 정규직 직원에게 적용됩니다.
+    kind: employment
+
+  - type: System
+    canonical_name: VPN
+    aliases: [사내 VPN, 원격접속]
+    evidence: 해외에서 사내 VPN에 접속하는 경우를 해외 접속으로 봅니다.
+    description: 외부에서 사내망에 접속하기 위한 원격접속 시스템
+
+  - type: Permission
+    canonical_name: VPN 해외접속
+    aliases: [해외 VPN 접속, 해외 원격접속]
+    evidence: 해외 VPN 접속 권한은 해외에서 사내 VPN으로 내부 시스템을 조회할 수 있는 권한입니다.
+    system_name: VPN
+    level: READ
+
+  - type: Policy
+    canonical_name: 해외 VPN 접속 허용 (2025-01-01)
+    aliases: [해외 VPN 접속 허용]
+    evidence: 2025년 1월 1일부터 정규직 직원은 별도 신청 없이 해외에서 VPN에 접속할 수 있습니다.
+    valid_from: 2025-01-01
+    valid_to: 2025-12-31
+
+  - type: Policy
+    canonical_name: 해외 VPN 접속 승인 필요 (2026-01-01)
+    aliases: [해외 VPN 접속 승인 필요, 해외 VPN 사전 승인]
+    evidence: 2026년 1월 1일부터 해외에서 VPN에 접속하려면 출국 전에 보안 담당자의 승인을 받아야 합니다.
+    valid_from: 2026-01-01
+    valid_to: null
+
+relations:
+  - source_type: Permission
+    source_name: VPN 해외접속
+    relation_type: "ON"
+    target_type: System
+    target_name: VPN
+    evidence: 해외 VPN 접속 권한은 해외에서 사내 VPN으로 내부 시스템을 조회할 수 있는 권한입니다.
+
+  - source_type: Policy
+    source_name: 해외 VPN 접속 허용 (2025-01-01)
+    relation_type: GOVERNS
+    target_type: Permission
+    target_name: VPN 해외접속
+    evidence: 2025년 1월 1일부터 정규직 직원은 별도 신청 없이 해외에서 VPN에 접속할 수 있습니다.
+
+  - source_type: Policy
+    source_name: 해외 VPN 접속 허용 (2025-01-01)
+    relation_type: APPLIES_TO
+    target_type: UserGroup
+    target_name: 정규직
+    evidence: 2025년 1월 1일부터 정규직 직원은 별도 신청 없이 해외에서 VPN에 접속할 수 있습니다.
+
+  - source_type: Policy
+    source_name: 해외 VPN 접속 승인 필요 (2026-01-01)
+    relation_type: GOVERNS
+    target_type: Permission
+    target_name: VPN 해외접속
+    evidence: 2026년 1월 1일부터 해외에서 VPN에 접속하려면 출국 전에 보안 담당자의 승인을 받아야 합니다.
+
+  - source_type: Policy
+    source_name: 해외 VPN 접속 승인 필요 (2026-01-01)
+    relation_type: APPLIES_TO
+    target_type: UserGroup
+    target_name: 정규직
+    evidence: 2026년 1월 1일부터 해외에서 VPN에 접속하려면 출국 전에 보안 담당자의 승인을 받아야 합니다.
+
+  - source_type: Policy
+    source_name: 해외 VPN 접속 승인 필요 (2026-01-01)
+    relation_type: SUPERSEDES
+    target_type: Policy
+    target_name: 해외 VPN 접속 허용 (2025-01-01)
+    evidence: 해외 VPN 접속을 자유롭게 허용하던 기존 규정은 2025년 12월 31일로 폐지되고 사전 승인제로 바뀝니다.
+
+policies:
+  - name: 해외 VPN 접속 허용 (2025-01-01)
+    subject_group: 정규직
+    system_name: VPN
+    level: READ
+    effect: ALLOW
+    conditions: null
+    valid_from: 2025-01-01
+    valid_to: 2025-12-31
+    evidence: 2025년 1월 1일부터 정규직 직원은 별도 신청 없이 해외에서 VPN에 접속할 수 있습니다.
+
+  - name: 해외 VPN 접속 승인 필요 (2026-01-01)
+    subject_group: 정규직
+    system_name: VPN
+    level: READ
+    effect: REQUIRE_APPROVAL
+    conditions: 출국 전 보안 담당자 승인
+    valid_from: 2026-01-01
+    valid_to: null
+    evidence: 2026년 1월 1일부터 해외에서 VPN에 접속하려면 출국 전에 보안 담당자의 승인을 받아야 합니다.
