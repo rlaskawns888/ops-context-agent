@@ -16,6 +16,9 @@ dist/
 # Data
 data/generated/
 
+# 로컬 CA 인증서 (환경별로 다름, 커밋 금지)
+certs/
+
 # IDE / OS
 .vscode/
 .idea/

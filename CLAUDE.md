@@ -68,7 +68,7 @@ agent-api 코드에서 ops-api를 HTTP로 직접 호출하거나 ops-api 패키�
 
 ```bash
 uv sync --all-packages       # 의존성 설치 (워크스페이스 멤버 전체 포함; 그냥 uv sync는 루트 dev 도구만 설치)
-docker compose up -d         # 서비스 기동 (compose 파일은 이후 단계에서 추가)
+docker compose up -d --build --wait  # 서비스 기동 (.env 필요; agent-api:8000 mcp-server:8001 ops-api:8002 ingest:8003)
 uv run pytest                # 전체 테스트
 uv run pytest services/agent-api   # 서비스 단위 테스트
 uv run ruff check .          # 린트
