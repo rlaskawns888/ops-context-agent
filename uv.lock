@@ -142,11 +142,15 @@ name = "common"
 version = "0.1.0"
 source = { editable = "packages/common" }
 dependencies = [
+    { name = "pydantic" },
     { name = "pydantic-settings" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "pydantic-settings", specifier = ">=2.16.3" }]
+requires-dist = [
+    { name = "pydantic", specifier = ">=2.14.4" },
+    { name = "pydantic-settings", specifier = ">=2.16.3" },
+]
 
 [[package]]
 name = "fastapi"
