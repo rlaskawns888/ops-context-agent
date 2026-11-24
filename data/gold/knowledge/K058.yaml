@@ -1,0 +1,68 @@
+id: K058
+title: 그룹웨어 E-551은 SSO와 AD 계정 경로를 거쳐 인프라운영팀이 관리한다
+scenario_type: multihop
+render_as:
+- slack
+- minutes
+entities:
+- type: System
+  canonical_name: 그룹웨어
+  aliases:
+  - GW
+  - 전자결재
+  evidence: 결재선 조회 오류 E-551은 그룹웨어에서 발생합니다.
+  description: 전자결재·일정·게시판을 제공하는 협업 시스템
+- type: System
+  canonical_name: SSO
+  aliases:
+  - 통합 로그인
+  - 통합인증
+  evidence: 그룹웨어는 SSO에 의존해 로그인 정보를 받아옵니다.
+  description: 한 번 로그인으로 사내 웹 시스템 전체에 접근하게 해 주는 통합 인증 시스템
+- type: System
+  canonical_name: AD 계정
+  aliases:
+  - AD
+  - 도메인 계정
+  - 사내 계정
+  evidence: SSO는 AD 계정 디렉터리에 연결해야 정상 동작합니다.
+  description: 사내 PC·메일·업무 시스템 로그인에 쓰는 통합 계정 디렉터리
+- type: Team
+  canonical_name: 인프라운영팀
+  aliases:
+  - 인프라팀
+  - 시스템운영팀
+  evidence: AD 계정과 SSO는 인프라운영팀이 운영합니다.
+  channel: null
+- type: Error
+  canonical_name: E-551
+  aliases: []
+  evidence: 결재선을 불러올 수 없습니다는 E-551 오류로 표시됩니다.
+  code: E-551
+  symptom: 조직 정보가 동기화되지 않아 결재선 조회에 실패한다
+relations:
+- source_type: Error
+  source_name: E-551
+  relation_type: OCCURS_IN
+  target_type: System
+  target_name: 그룹웨어
+  evidence: 결재선을 불러올 수 없습니다는 E-551 오류로 표시됩니다.
+- source_type: System
+  source_name: 그룹웨어
+  relation_type: DEPENDS_ON
+  target_type: System
+  target_name: SSO
+  evidence: 그룹웨어는 SSO에 의존해 로그인 정보를 받아옵니다.
+- source_type: System
+  source_name: SSO
+  relation_type: DEPENDS_ON
+  target_type: System
+  target_name: AD 계정
+  evidence: SSO는 AD 계정 디렉터리에 연결해야 정상 동작합니다.
+- source_type: System
+  source_name: AD 계정
+  relation_type: OWNED_BY
+  target_type: Team
+  target_name: 인프라운영팀
+  evidence: AD 계정과 SSO는 인프라운영팀이 운영합니다.
+policies: []

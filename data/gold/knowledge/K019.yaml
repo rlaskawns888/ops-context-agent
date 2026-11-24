@@ -1,0 +1,48 @@
+id: K019
+title: 외부 발송 차단 메일은 권한 확인 후 보낸다
+scenario_type: official_procedure
+render_as:
+- guide
+entities:
+- type: Solution
+  canonical_name: 외부 발송 해제 절차
+  aliases:
+  - 메일 외부발송 신청
+  - 외부 메일 발송 신청
+  evidence: 외부 발송이 차단되면 메일 외부발송 권한을 확인하고 필요 시 신청해야 합니다.
+  steps:
+  - 메일에서 외부 수신자 주소와 발송 목적을 확인한다
+  - 외부발송 권한 보유 여부를 점검한다
+  - 권한이 없으면 승인 절차를 거쳐 신청한다
+  - 권한 반영 후 다시 외부 메일을 발송한다
+  knowledge_type: official
+  valid_from: null
+  valid_to: null
+- type: Error
+  canonical_name: 외부 메일 발송 차단
+  aliases: []
+  evidence: 외부 발송이 차단되었습니다라는 메시지는 사외 주소 발송이 막혔다는 뜻입니다.
+  code: E-502
+  symptom: 사외 주소로 메일을 보낼 수 없음
+- type: System
+  canonical_name: 메일
+  aliases:
+  - 사내 메일
+  - 웹메일
+  - 메일 서버
+  evidence: 외부 발송이 차단되었습니다는 메일에서 발생하는 오류입니다.
+  description: 사내 메일 송수신 시스템
+relations:
+- source_type: Error
+  source_name: 외부 메일 발송 차단
+  relation_type: OCCURS_IN
+  target_type: System
+  target_name: 메일
+  evidence: 외부 발송이 차단되었습니다는 메일에서 발생하는 오류입니다.
+- source_type: Error
+  source_name: 외부 메일 발송 차단
+  relation_type: RESOLVED_BY
+  target_type: Solution
+  target_name: 외부 발송 해제 절차
+  evidence: 외부 발송이 차단되면 메일 외부발송 권한을 확인하고 필요 시 신청해야 합니다.
+policies: []

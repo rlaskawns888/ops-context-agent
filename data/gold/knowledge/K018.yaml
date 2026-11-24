@@ -1,0 +1,48 @@
+id: K018
+title: 운영DB 접속 권한은 승인 후 신청한다
+scenario_type: official_procedure
+render_as:
+- guide
+- minutes
+entities:
+- type: Solution
+  canonical_name: 운영DB 접속 신청
+  aliases:
+  - 운영DB 권한 신청
+  - DB 접속 권한 신청
+  evidence: 운영DB 접속 권한이 없으면 담당 팀에 권한 신청을 먼저 해야 합니다.
+  steps:
+  - 운영DB 사용 목적과 접속 대상 스키마를 확인한다
+  - 권한 신청서에 필요한 계정 정보와 사유를 적는다
+  - DB운영팀의 승인과 반영 완료를 기다린다
+  - 반영 후 다시 접속해 권한을 확인한다
+  knowledge_type: official
+  valid_from: null
+  valid_to: null
+- type: Error
+  canonical_name: 운영DB 권한 없음
+  aliases: []
+  evidence: 운영DB 접속 계정에 해당 스키마 권한이 부여되지 않으면 접속이 거부됩니다.
+  code: E-801
+  symptom: 운영DB 접속 시 권한이 없어 거부됨
+- type: System
+  canonical_name: 운영DB
+  aliases:
+  - 운영 데이터베이스
+  - 프로덕션 DB
+  evidence: 접속 권한이 없습니다는 운영DB에서 발생하는 오류입니다.
+  description: 실제 서비스 데이터가 저장된 운영 데이터베이스
+relations:
+- source_type: Error
+  source_name: 운영DB 권한 없음
+  relation_type: OCCURS_IN
+  target_type: System
+  target_name: 운영DB
+  evidence: 접속 권한이 없습니다는 운영DB에서 발생하는 오류입니다.
+- source_type: Error
+  source_name: 운영DB 권한 없음
+  relation_type: RESOLVED_BY
+  target_type: Solution
+  target_name: 운영DB 접속 신청
+  evidence: 운영DB 접속 권한이 없으면 담당 팀에 권한 신청을 먼저 해야 합니다.
+policies: []

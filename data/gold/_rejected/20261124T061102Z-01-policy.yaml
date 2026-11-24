@@ -1,0 +1,63 @@
+reasons:
+- 'Permission ''개발DB ADMIN'': world canonical_name이 아님'
+draft:
+  title: 시스템 관리자 개발DB 관리권한 승인
+  scenario_type: policy
+  render_as:
+  - minutes
+  entities:
+  - canonical_name: 시스템 관리자
+    aliases:
+    - 시스템 운영자
+    - 관리자 계정 사용자
+    evidence: 시스템 관리자는 운영 작업에 필요한 권한을 별도 승인으로 받습니다.
+    type: UserGroup
+    kind: role
+  - canonical_name: 개발DB
+    aliases:
+    - 개발 데이터베이스
+    - 개발계 DB
+    evidence: 개발DB는 개발·테스트용 데이터베이스입니다.
+    type: System
+    description: 개발·테스트용 데이터베이스
+  - canonical_name: 개발DB ADMIN
+    aliases: []
+    evidence: 개발DB ADMIN 권한이 있으면 개발DB의 관리자 작업을 수행할 수 있습니다.
+    type: Permission
+    system_name: 개발DB
+    level: ADMIN
+  - canonical_name: 시스템 관리자 개발DB 관리권한 승인
+    aliases: []
+    evidence: 시스템 관리자의 개발DB 관리자 권한은 DB운영팀 승인 후 부여합니다.
+    type: Policy
+    valid_from: null
+    valid_to: null
+  relations:
+  - source_type: Permission
+    source_name: 개발DB ADMIN
+    relation_type: 'ON'
+    target_type: System
+    target_name: 개발DB
+    evidence: 개발DB ADMIN 권한이 있으면 개발DB의 관리자 작업을 수행할 수 있습니다.
+  - source_type: Policy
+    source_name: 시스템 관리자 개발DB 관리권한 승인
+    relation_type: GOVERNS
+    target_type: Permission
+    target_name: 개발DB ADMIN
+    evidence: 시스템 관리자의 개발DB 관리자 권한은 DB운영팀 승인 후 부여합니다.
+  - source_type: Policy
+    source_name: 시스템 관리자 개발DB 관리권한 승인
+    relation_type: APPLIES_TO
+    target_type: UserGroup
+    target_name: 시스템 관리자
+    evidence: 시스템 관리자의 개발DB 관리자 권한은 DB운영팀 승인 후 부여합니다.
+  policies:
+  - name: 시스템 관리자 개발DB 관리권한 승인
+    subject_group: 시스템 관리자
+    system_name: 개발DB
+    level: ADMIN
+    effect: REQUIRE_APPROVAL
+    conditions: DB운영팀 승인
+    valid_from: null
+    valid_to: null
+    evidence: 시스템 관리자의 개발DB 관리자 권한은 DB운영팀 승인 후 부여합니다.

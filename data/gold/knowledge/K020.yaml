@@ -1,0 +1,49 @@
+id: K020
+title: 요청서는 필수 항목을 채워 제출한다
+scenario_type: official_procedure
+render_as:
+- guide
+- ticket
+entities:
+- type: Solution
+  canonical_name: 요청서 제출 절차
+  aliases:
+  - 티켓 등록 절차
+  - 요청서 작성 절차
+  evidence: 요청서를 제출하려면 필수 항목과 승인권자 정보를 모두 채워야 합니다.
+  steps:
+  - 티켓 시스템에서 새 요청서를 연다
+  - 필수 항목과 요청 사유를 빠짐없이 입력한다
+  - 승인권자 정보를 정확히 지정한다
+  - 제출 전 누락 항목을 다시 확인한 뒤 등록한다
+  knowledge_type: official
+  valid_from: null
+  valid_to: null
+- type: Error
+  canonical_name: 요청서 제출 실패
+  aliases: []
+  evidence: 필수 항목 누락 또는 승인권자 정보가 없어 티켓 제출에 실패합니다.
+  code: E-981
+  symptom: 요청서를 제출할 수 없음
+- type: System
+  canonical_name: 티켓 시스템
+  aliases:
+  - ITSM
+  - IT 요청 시스템
+  - 서비스 요청
+  evidence: 요청서를 제출할 수 없습니다는 티켓 시스템에서 발생하는 오류입니다.
+  description: IT 장애 신고·계정·권한 신청을 접수하고 처리 상태를 관리하는 시스템
+relations:
+- source_type: Error
+  source_name: 요청서 제출 실패
+  relation_type: OCCURS_IN
+  target_type: System
+  target_name: 티켓 시스템
+  evidence: 요청서를 제출할 수 없습니다는 티켓 시스템에서 발생하는 오류입니다.
+- source_type: Error
+  source_name: 요청서 제출 실패
+  relation_type: RESOLVED_BY
+  target_type: Solution
+  target_name: 요청서 제출 절차
+  evidence: 요청서를 제출하려면 필수 항목과 승인권자 정보를 모두 채워야 합니다.
+policies: []

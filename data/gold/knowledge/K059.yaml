@@ -1,0 +1,41 @@
+id: K059
+title: EDR E-631은 보안운영팀 운영 경로를 따라간다
+scenario_type: multihop
+render_as:
+- slack
+- minutes
+entities:
+- type: System
+  canonical_name: EDR
+  aliases:
+  - 엔드포인트 보안
+  - 단말 보안 에이전트
+  evidence: EDR 에이전트가 관리 서버와 통신하지 못하면 E-631 오류가 발생합니다.
+  description: PC의 의심 행위를 탐지·차단하는 단말 보안 에이전트
+- type: Team
+  canonical_name: 보안운영팀
+  aliases:
+  - 보안운영
+  - 보안팀
+  evidence: EDR는 보안운영팀이 운영하는 보안 시스템입니다.
+  channel: null
+- type: Error
+  canonical_name: E-631
+  aliases: []
+  evidence: 관리 서버와 통신할 수 없습니다는 E-631 오류입니다.
+  code: E-631
+  symptom: EDR 에이전트가 관리 서버에 정책을 받아오지 못한다
+relations:
+- source_type: Error
+  source_name: E-631
+  relation_type: OCCURS_IN
+  target_type: System
+  target_name: EDR
+  evidence: 관리 서버와 통신할 수 없습니다는 E-631 오류입니다.
+- source_type: System
+  source_name: EDR
+  relation_type: OWNED_BY
+  target_type: Team
+  target_name: 보안운영팀
+  evidence: EDR는 보안운영팀이 운영하는 보안 시스템입니다.
+policies: []

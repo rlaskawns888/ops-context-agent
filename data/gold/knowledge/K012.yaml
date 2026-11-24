@@ -1,0 +1,46 @@
+id: K012
+title: DRM에서 E-602 오류는 보안 에이전트를 다시 띄우면 해결된다
+scenario_type: tacit_fix
+render_as:
+- slack
+- ticket
+entities:
+- type: System
+  canonical_name: DRM
+  aliases:
+  - 문서보안
+  - 문서 암호화
+  evidence: DRM 에이전트가 꺼져 있으면 암호화 문서를 열 수 없다는 문의가 들어옵니다.
+  description: 사내 문서를 자동 암호화하고 열람 권한을 통제하는 문서보안 시스템
+- type: Error
+  canonical_name: E-602
+  aliases: []
+  evidence: 암호화 문서를 열 때 DRM 에이전트가 꺼져 있으면 E-602가 뜹니다.
+  code: E-602
+  symptom: 문서보안 에이전트가 실행 중이 아님
+- type: Solution
+  canonical_name: 보안 에이전트 재실행
+  aliases:
+  - DRM 재시작
+  evidence: E-602는 보안 에이전트를 다시 실행하고 문서를 재오픈하면 풀리는 경우가 많습니다.
+  steps:
+  - 작업표시줄의 DRM 에이전트 상태를 확인한다
+  - 실행 중이 아니면 에이전트를 다시 시작한다
+  - 문서를 다시 열어 정상 동작을 확인한다
+  knowledge_type: tacit
+  valid_from: null
+  valid_to: null
+relations:
+- source_type: Error
+  source_name: E-602
+  relation_type: OCCURS_IN
+  target_type: System
+  target_name: DRM
+  evidence: 암호화 문서를 열 때 DRM 에이전트가 꺼져 있으면 E-602가 뜹니다.
+- source_type: Error
+  source_name: E-602
+  relation_type: RESOLVED_BY
+  target_type: Solution
+  target_name: 보안 에이전트 재실행
+  evidence: E-602는 보안 에이전트를 다시 실행하고 문서를 재오픈하면 풀리는 경우가 많습니다.
+policies: []

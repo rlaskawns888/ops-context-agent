@@ -1,0 +1,108 @@
+id: K049
+title: 시스템 관리자의 형상관리 쓰기가 2026년부터 허용에서 사전 승인 필요로 바뀌었다
+scenario_type: policy_revision
+render_as:
+- guide
+- minutes
+entities:
+- type: UserGroup
+  canonical_name: 시스템 관리자
+  aliases:
+  - 시스템 운영자
+  - 관리자 계정 사용자
+  evidence: 이 정책은 서버와 시스템을 관리하는 시스템 관리자에게 적용됩니다.
+  kind: role
+- type: System
+  canonical_name: 형상관리
+  aliases:
+  - Git
+  - 깃
+  - 소스 저장소
+  evidence: 형상관리 쓰기 권한은 Git 저장소에 코드를 반영하는 권한입니다.
+  description: 소스코드 버전을 관리하는 Git 저장소 서비스
+- type: Permission
+  canonical_name: 형상관리 WRITE
+  aliases:
+  - Git 쓰기 권한
+  - 푸시 권한
+  evidence: 형상관리 쓰기 권한은 저장소에 변경 내용을 푸시하는 권한입니다.
+  system_name: 형상관리
+  level: WRITE
+- type: Policy
+  canonical_name: 형상관리 쓰기 허용 (2025-01-01)
+  aliases:
+  - 형상관리 쓰기 허용
+  evidence: 2025년 1월 1일부터 시스템 관리자는 형상관리 저장소에 직접 푸시할 수 있었습니다.
+  valid_from: 2025-01-01
+  valid_to: 2025-12-31
+- type: Policy
+  canonical_name: 형상관리 쓰기 사전 승인 필요 (2026-01-01)
+  aliases:
+  - 형상관리 쓰기 사전 승인 필요
+  - 푸시 사전 승인
+  evidence: 2026년 1월 1일부터 시스템 관리자가 형상관리 저장소에 푸시하려면 개발플랫폼팀 승인을 받아야 합니다.
+  valid_from: 2026-01-01
+  valid_to: null
+- type: Team
+  canonical_name: 개발플랫폼팀
+  aliases:
+  - 플랫폼팀
+  - DevOps팀
+  evidence: 형상관리 쓰기 승인 정책은 개발플랫폼팀이 운영합니다.
+  channel: null
+relations:
+- source_type: Permission
+  source_name: 형상관리 WRITE
+  relation_type: 'ON'
+  target_type: System
+  target_name: 형상관리
+  evidence: 형상관리 쓰기 권한은 저장소에 변경 내용을 푸시하는 권한입니다.
+- source_type: Policy
+  source_name: 형상관리 쓰기 허용 (2025-01-01)
+  relation_type: GOVERNS
+  target_type: Permission
+  target_name: 형상관리 WRITE
+  evidence: 2025년 1월 1일부터 시스템 관리자는 형상관리 저장소에 직접 푸시할 수 있었습니다.
+- source_type: Policy
+  source_name: 형상관리 쓰기 허용 (2025-01-01)
+  relation_type: APPLIES_TO
+  target_type: UserGroup
+  target_name: 시스템 관리자
+  evidence: 2025년 1월 1일부터 시스템 관리자는 형상관리 저장소에 직접 푸시할 수 있었습니다.
+- source_type: Policy
+  source_name: 형상관리 쓰기 사전 승인 필요 (2026-01-01)
+  relation_type: GOVERNS
+  target_type: Permission
+  target_name: 형상관리 WRITE
+  evidence: 2026년 1월 1일부터 시스템 관리자가 형상관리 저장소에 푸시하려면 개발플랫폼팀 승인을 받아야 합니다.
+- source_type: Policy
+  source_name: 형상관리 쓰기 사전 승인 필요 (2026-01-01)
+  relation_type: APPLIES_TO
+  target_type: UserGroup
+  target_name: 시스템 관리자
+  evidence: 2026년 1월 1일부터 시스템 관리자가 형상관리 저장소에 푸시하려면 개발플랫폼팀 승인을 받아야 합니다.
+- source_type: Policy
+  source_name: 형상관리 쓰기 사전 승인 필요 (2026-01-01)
+  relation_type: SUPERSEDES
+  target_type: Policy
+  target_name: 형상관리 쓰기 허용 (2025-01-01)
+  evidence: 시스템 관리자의 형상관리 쓰기는 2025년에는 허용이었고 2026년부터 사전 승인으로 바뀝니다.
+policies:
+- name: 형상관리 쓰기 허용 (2025-01-01)
+  subject_group: 시스템 관리자
+  system_name: 형상관리
+  level: WRITE
+  effect: ALLOW
+  conditions: null
+  valid_from: 2025-01-01
+  valid_to: 2025-12-31
+  evidence: 2025년 1월 1일부터 시스템 관리자는 형상관리 저장소에 직접 푸시할 수 있었습니다.
+- name: 형상관리 쓰기 사전 승인 필요 (2026-01-01)
+  subject_group: 시스템 관리자
+  system_name: 형상관리
+  level: WRITE
+  effect: REQUIRE_APPROVAL
+  conditions: 개발플랫폼팀 승인
+  valid_from: 2026-01-01
+  valid_to: null
+  evidence: 2026년 1월 1일부터 시스템 관리자가 형상관리 저장소에 푸시하려면 개발플랫폼팀 승인을 받아야 합니다.

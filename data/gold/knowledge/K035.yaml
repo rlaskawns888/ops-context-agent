@@ -1,0 +1,63 @@
+id: K035
+title: 정규직의 티켓 시스템 관리자 권한은 승인 후 부여한다
+scenario_type: policy
+render_as:
+- guide
+entities:
+- type: UserGroup
+  canonical_name: 정규직
+  aliases:
+  - 정규직 직원
+  - 임직원
+  evidence: 정규직은 내부 업무 처리를 위해 필요한 권한을 신청할 수 있습니다.
+  kind: employment
+- type: System
+  canonical_name: 티켓 시스템
+  aliases:
+  - ITSM
+  - IT 요청 시스템
+  - 서비스 요청
+  evidence: 티켓 시스템은 IT 장애 신고와 계정, 권한 신청을 접수하고 처리 상태를 관리하는 시스템입니다.
+  description: IT 장애 신고·계정·권한 신청을 접수하고 처리 상태를 관리하는 시스템
+- type: Permission
+  canonical_name: 티켓 시스템 관리자
+  aliases:
+  - ITSM 관리자 권한
+  evidence: 티켓 시스템 관리자는 요청 유형과 처리 흐름을 변경할 수 있는 관리자 권한입니다.
+  system_name: 티켓 시스템
+  level: ADMIN
+- type: Policy
+  canonical_name: 정규직 티켓 관리자 승인
+  aliases: []
+  evidence: 정규직의 티켓 시스템 관리자 권한은 팀장 승인 후 부여합니다.
+  valid_from: null
+  valid_to: null
+relations:
+- source_type: Permission
+  source_name: 티켓 시스템 관리자
+  relation_type: 'ON'
+  target_type: System
+  target_name: 티켓 시스템
+  evidence: 티켓 시스템 관리자는 요청 유형과 처리 흐름을 변경할 수 있는 관리자 권한입니다.
+- source_type: Policy
+  source_name: 정규직 티켓 관리자 승인
+  relation_type: GOVERNS
+  target_type: Permission
+  target_name: 티켓 시스템 관리자
+  evidence: 정규직의 티켓 시스템 관리자 권한은 팀장 승인 후 부여합니다.
+- source_type: Policy
+  source_name: 정규직 티켓 관리자 승인
+  relation_type: APPLIES_TO
+  target_type: UserGroup
+  target_name: 정규직
+  evidence: 정규직의 티켓 시스템 관리자 권한은 팀장 승인 후 부여합니다.
+policies:
+- name: 정규직 티켓 관리자 승인
+  subject_group: 정규직
+  system_name: 티켓 시스템
+  level: ADMIN
+  effect: REQUIRE_APPROVAL
+  conditions: 팀장 승인
+  valid_from: null
+  valid_to: null
+  evidence: 정규직의 티켓 시스템 관리자 권한은 팀장 승인 후 부여합니다.

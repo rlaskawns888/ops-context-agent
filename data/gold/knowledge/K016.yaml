@@ -1,0 +1,46 @@
+id: K016
+title: 형상관리 E-902 토큰 만료는 개인 액세스 토큰 재발급으로 해결된다 (암묵지)
+scenario_type: tacit_fix
+render_as:
+- slack
+- ticket
+entities:
+- type: System
+  canonical_name: 형상관리
+  aliases:
+  - Git
+  - 깃
+  - 소스 저장소
+  evidence: 형상관리 푸시가 안 될 때는 개인 액세스 토큰을 다시 발급받으라는 답변을 받았습니다.
+  description: 소스코드 버전을 관리하는 Git 저장소 서비스
+- type: Error
+  canonical_name: E-902
+  aliases: []
+  evidence: 형상관리에서 푸시하려는데 E-902 액세스 토큰 만료 오류가 떠서 작업이 멈췄습니다.
+  code: E-902
+  symptom: 액세스 토큰 만료
+- type: Solution
+  canonical_name: 개인 액세스 토큰 재발급
+  aliases: []
+  evidence: E-902는 개인 액세스 토큰을 새로 발급하고 다시 로그인하면 해결됩니다.
+  steps:
+  - 형상관리 접속에 사용한 개인 액세스 토큰을 확인한다
+  - 만료된 토큰을 폐기하고 새 토큰을 발급한다
+  - 새 토큰으로 다시 인증한 뒤 푸시를 재시도한다
+  knowledge_type: tacit
+  valid_from: null
+  valid_to: null
+relations:
+- source_type: Error
+  source_name: E-902
+  relation_type: OCCURS_IN
+  target_type: System
+  target_name: 형상관리
+  evidence: 형상관리에서 푸시하려는데 E-902 액세스 토큰 만료 오류가 떠서 작업이 멈췄습니다.
+- source_type: Error
+  source_name: E-902
+  relation_type: RESOLVED_BY
+  target_type: Solution
+  target_name: 개인 액세스 토큰 재발급
+  evidence: E-902는 개인 액세스 토큰을 새로 발급하고 다시 로그인하면 해결됩니다.
+policies: []

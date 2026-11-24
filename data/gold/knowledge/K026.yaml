@@ -1,0 +1,45 @@
+id: K026
+title: 백신 엔진 업데이트 실패는 최신 패턴을 다시 내려받는다
+scenario_type: official_procedure
+render_as:
+- guide
+entities:
+- type: System
+  canonical_name: 백신
+  aliases:
+  - 백신 프로그램
+  - 안티바이러스
+  evidence: 백신 엔진이 최신 패턴을 내려받지 못하면 업데이트 실패가 발생합니다.
+  description: PC의 악성코드를 검사·치료하는 백신 프로그램
+- type: Error
+  canonical_name: 업데이트 실패
+  aliases: []
+  evidence: 백신 엔진이 최신 패턴을 내려받지 못하면 업데이트 실패로 표시됩니다.
+  code: E-661
+  symptom: 백신 엔진 업데이트가 완료되지 않음
+- type: Solution
+  canonical_name: 패턴 재동기화 절차
+  aliases: []
+  evidence: 업데이트 실패는 캐시를 초기화한 뒤 패턴을 다시 내려받으면 해결합니다.
+  steps:
+  - 백신 프로그램을 종료한다
+  - 업데이트 캐시를 초기화한다
+  - 패턴 업데이트를 다시 실행한다
+  - 업데이트 완료 여부를 확인한다
+  knowledge_type: official
+  valid_from: null
+  valid_to: null
+relations:
+- source_type: Error
+  source_name: 업데이트 실패
+  relation_type: OCCURS_IN
+  target_type: System
+  target_name: 백신
+  evidence: 백신 엔진이 최신 패턴을 내려받지 못하면 업데이트 실패가 발생합니다.
+- source_type: Error
+  source_name: 업데이트 실패
+  relation_type: RESOLVED_BY
+  target_type: Solution
+  target_name: 패턴 재동기화 절차
+  evidence: 업데이트 실패는 캐시를 초기화한 뒤 패턴을 다시 내려받으면 해결합니다.
+policies: []

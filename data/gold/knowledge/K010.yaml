@@ -1,0 +1,47 @@
+id: K010
+title: 사내 포털에서 E-961 오류는 권한 캐시를 비운 뒤 다시 로그인하면 해결된다
+scenario_type: tacit_fix
+render_as:
+- slack
+- ticket
+entities:
+- type: System
+  canonical_name: 사내 포털
+  aliases:
+  - 포털
+  - 인트라넷
+  - EP
+  evidence: 사내 포털에서 권한 정보 조회가 꼬이면 메뉴가 비어 보인다는 문의가 자주 올라옵니다.
+  description: 사내 공지와 각 업무 시스템 바로가기를 모은 첫 화면
+- type: Error
+  canonical_name: E-961
+  aliases: []
+  evidence: 사내 포털에서 메뉴가 비어 보이는 현상이 E-961로 표시됩니다.
+  code: E-961
+  symptom: 포털 메뉴를 불러오지 못함
+- type: Solution
+  canonical_name: 권한 캐시 삭제
+  aliases:
+  - 캐시 초기화
+  evidence: E-961은 포털 권한 캐시를 지운 뒤 다시 로그인하면 대부분 정상으로 돌아옵니다.
+  steps:
+  - 브라우저에서 사내 포털 세션을 로그아웃한다
+  - 포털 관련 캐시를 삭제한다
+  - 브라우저를 다시 열어 사내 포털에 로그인한다
+  knowledge_type: tacit
+  valid_from: null
+  valid_to: null
+relations:
+- source_type: Error
+  source_name: E-961
+  relation_type: OCCURS_IN
+  target_type: System
+  target_name: 사내 포털
+  evidence: 사내 포털에서 메뉴가 비어 보이는 현상이 E-961로 표시됩니다.
+- source_type: Error
+  source_name: E-961
+  relation_type: RESOLVED_BY
+  target_type: Solution
+  target_name: 권한 캐시 삭제
+  evidence: E-961은 포털 권한 캐시를 지운 뒤 다시 로그인하면 대부분 정상으로 돌아옵니다.
+policies: []

@@ -1,0 +1,69 @@
+id: K031
+title: 시스템 관리자의 개발DB 읽기 허용
+scenario_type: policy
+render_as:
+- guide
+entities:
+- type: UserGroup
+  canonical_name: 시스템 관리자
+  aliases:
+  - 시스템 운영자
+  - 관리자 계정 사용자
+  evidence: 시스템 관리자는 서버·DB·보안 시스템의 관리자 권한을 가진 운영 담당자입니다.
+  kind: role
+- type: System
+  canonical_name: 개발DB
+  aliases:
+  - 개발 데이터베이스
+  - 개발계 DB
+  evidence: 개발DB는 개발·테스트용 데이터베이스입니다.
+  description: 개발·테스트용 데이터베이스
+- type: Permission
+  canonical_name: 개발DB READ
+  aliases:
+  - 개발DB 조회 권한
+  evidence: 개발DB READ 권한이 있으면 개발용 데이터를 조회할 수 있습니다.
+  system_name: 개발DB
+  level: READ
+- type: Policy
+  canonical_name: 시스템 관리자의 개발DB 조회 허용
+  aliases: []
+  evidence: 시스템 관리자는 개발DB 조회 권한을 사용할 수 있습니다.
+  valid_from: null
+  valid_to: null
+- type: Team
+  canonical_name: DB운영팀
+  aliases:
+  - DBA팀
+  - DB팀
+  evidence: 개발DB 권한은 DB운영팀이 관리합니다.
+  channel: null
+relations:
+- source_type: Permission
+  source_name: 개발DB READ
+  relation_type: 'ON'
+  target_type: System
+  target_name: 개발DB
+  evidence: 개발DB READ 권한이 있으면 개발용 데이터를 조회할 수 있습니다.
+- source_type: Policy
+  source_name: 시스템 관리자의 개발DB 조회 허용
+  relation_type: GOVERNS
+  target_type: Permission
+  target_name: 개발DB READ
+  evidence: 시스템 관리자는 개발DB 조회 권한을 사용할 수 있습니다.
+- source_type: Policy
+  source_name: 시스템 관리자의 개발DB 조회 허용
+  relation_type: APPLIES_TO
+  target_type: UserGroup
+  target_name: 시스템 관리자
+  evidence: 시스템 관리자는 개발DB 조회 권한을 사용할 수 있습니다.
+policies:
+- name: 시스템 관리자의 개발DB 조회 허용
+  subject_group: 시스템 관리자
+  system_name: 개발DB
+  level: READ
+  effect: ALLOW
+  conditions: null
+  valid_from: null
+  valid_to: null
+  evidence: 시스템 관리자는 개발DB 조회 권한을 사용할 수 있습니다.

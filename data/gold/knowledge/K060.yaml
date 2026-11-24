@@ -1,0 +1,55 @@
+id: K060
+title: 망연계 E-702는 DRM을 거쳐 보안운영팀 관리 체계로 이어진다
+scenario_type: multihop
+render_as:
+- slack
+- minutes
+entities:
+- type: System
+  canonical_name: 망연계
+  aliases:
+  - 망연계 시스템
+  - 자료전송 시스템
+  - 파일 반출입
+  evidence: 망연계로 금지된 파일 형식을 보내면 E-702 오류가 발생합니다.
+  description: 업무망과 인터넷망 사이에서 승인된 파일만 주고받게 하는 자료 전송 시스템
+- type: System
+  canonical_name: DRM
+  aliases:
+  - 문서보안
+  - 문서 암호화
+  evidence: 망연계는 DRM이 적용된 문서를 그대로 전송하지 못하게 막습니다.
+  description: 사내 문서를 자동 암호화하고 열람 권한을 통제하는 문서보안 시스템
+- type: Team
+  canonical_name: 보안운영팀
+  aliases:
+  - 보안운영
+  - 보안팀
+  evidence: DRM은 보안운영팀이 운영합니다.
+  channel: null
+- type: Error
+  canonical_name: E-702
+  aliases: []
+  evidence: 허용되지 않은 파일 형식입니다는 E-702 오류로 안내됩니다.
+  code: E-702
+  symptom: 실행 파일 등 전송이 금지된 확장자의 파일을 보냈다
+relations:
+- source_type: Error
+  source_name: E-702
+  relation_type: OCCURS_IN
+  target_type: System
+  target_name: 망연계
+  evidence: 허용되지 않은 파일 형식입니다는 E-702 오류로 안내됩니다.
+- source_type: System
+  source_name: 망연계
+  relation_type: DEPENDS_ON
+  target_type: System
+  target_name: DRM
+  evidence: 망연계는 DRM이 적용된 문서를 그대로 전송하지 못하게 막습니다.
+- source_type: System
+  source_name: DRM
+  relation_type: OWNED_BY
+  target_type: Team
+  target_name: 보안운영팀
+  evidence: DRM은 보안운영팀이 운영합니다.
+policies: []

@@ -1,0 +1,46 @@
+id: K027
+title: 망연계 반출 거부는 승인된 파일만 다시 신청한다
+scenario_type: official_procedure
+render_as:
+- guide
+entities:
+- type: System
+  canonical_name: 망연계
+  aliases:
+  - 망연계 시스템
+  - 자료전송 시스템
+  - 파일 반출입
+  evidence: DRM이 적용된 문서를 해제하지 않고 전송하려 하면 망연계 전송이 거부됩니다.
+  description: 업무망과 인터넷망 사이에서 승인된 파일만 주고받게 하는 자료 전송 시스템
+- type: Error
+  canonical_name: 암호화 문서 전송 실패
+  aliases: []
+  evidence: DRM이 적용된 문서를 해제하지 않고 전송하려 하면 암호화된 문서는 전송할 수 없습니다.
+  code: E-703
+  symptom: DRM 적용 문서를 망연계로 전송하지 못함
+- type: Solution
+  canonical_name: 반출 재신청 절차
+  aliases: []
+  evidence: 암호화된 문서는 DRM 해제 후 반출을 다시 신청해야 합니다.
+  steps:
+  - 전송할 파일의 DRM 적용 여부를 확인한다
+  - 필요한 경우 문서 소유자 또는 승인 절차를 통해 DRM 해제를 진행한다
+  - 망연계 반출 요청을 다시 제출한다
+  - 승인 완료 후 파일 전송을 실행한다
+  knowledge_type: official
+  valid_from: null
+  valid_to: null
+relations:
+- source_type: Error
+  source_name: 암호화 문서 전송 실패
+  relation_type: OCCURS_IN
+  target_type: System
+  target_name: 망연계
+  evidence: DRM이 적용된 문서를 해제하지 않고 전송하려 하면 암호화된 문서는 전송할 수 없습니다.
+- source_type: Error
+  source_name: 암호화 문서 전송 실패
+  relation_type: RESOLVED_BY
+  target_type: Solution
+  target_name: 반출 재신청 절차
+  evidence: 암호화된 문서는 DRM 해제 후 반출을 다시 신청해야 합니다.
+policies: []

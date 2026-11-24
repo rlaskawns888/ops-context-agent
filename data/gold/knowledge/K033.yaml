@@ -1,0 +1,65 @@
+id: K033
+title: 임원은 운영계 배포를 사전 승인받아야 한다
+scenario_type: policy
+render_as:
+- minutes
+- guide
+entities:
+- type: UserGroup
+  canonical_name: 임원
+  aliases:
+  - 경영진
+  - 임원진
+  evidence: 임원은 운영 영향이 큰 작업도 사전 승인 절차를 거쳐야 합니다.
+  kind: employment
+- type: System
+  canonical_name: 배포시스템
+  aliases:
+  - 배포 파이프라인
+  - CI/CD
+  - 배포툴
+  evidence: 배포시스템은 형상관리의 코드를 빌드해 개발계와 운영계에 배포하는 시스템입니다.
+  description: 형상관리의 코드를 빌드해 개발계·운영계에 배포하는 시스템
+- type: Permission
+  canonical_name: 운영계 배포
+  aliases:
+  - 운영 배포 권한
+  - 프로덕션 배포 권한
+  evidence: 운영계 배포는 운영 환경에 변경을 반영하는 고위험 권한입니다.
+  system_name: 배포시스템
+  level: ADMIN
+- type: Policy
+  canonical_name: 임원 운영계 배포 승인
+  aliases: []
+  evidence: 임원의 운영계 배포는 배포 승인권자의 사전 승인이 있어야 가능합니다.
+  valid_from: null
+  valid_to: null
+relations:
+- source_type: Permission
+  source_name: 운영계 배포
+  relation_type: 'ON'
+  target_type: System
+  target_name: 배포시스템
+  evidence: 운영계 배포는 운영 환경에 변경을 반영하는 고위험 권한입니다.
+- source_type: Policy
+  source_name: 임원 운영계 배포 승인
+  relation_type: GOVERNS
+  target_type: Permission
+  target_name: 운영계 배포
+  evidence: 임원의 운영계 배포는 배포 승인권자의 사전 승인이 있어야 가능합니다.
+- source_type: Policy
+  source_name: 임원 운영계 배포 승인
+  relation_type: APPLIES_TO
+  target_type: UserGroup
+  target_name: 임원
+  evidence: 임원의 운영계 배포는 배포 승인권자의 사전 승인이 있어야 가능합니다.
+policies:
+- name: 임원 운영계 배포 승인
+  subject_group: 임원
+  system_name: 배포시스템
+  level: ADMIN
+  effect: REQUIRE_APPROVAL
+  conditions: 배포 승인권자 사전 승인
+  valid_from: null
+  valid_to: null
+  evidence: 임원의 운영계 배포는 배포 승인권자의 사전 승인이 있어야 가능합니다.

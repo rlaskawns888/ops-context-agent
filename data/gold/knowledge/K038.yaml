@@ -1,0 +1,65 @@
+id: K038
+title: 신규 입사자의 메일 대용량첨부 제한
+scenario_type: policy
+render_as:
+- guide
+- ticket
+entities:
+- type: UserGroup
+  canonical_name: 신규 입사자
+  aliases:
+  - 신입
+  - 신규 직원
+  - 입사자
+  evidence: 신규 입사자는 입사 초기에는 메일의 대용량첨부 권한을 받지 않습니다.
+  kind: employment
+- type: System
+  canonical_name: 메일
+  aliases:
+  - 사내 메일
+  - 웹메일
+  - 메일 서버
+  evidence: 메일은 사내 메일 송수신 시스템입니다.
+  description: 사내 메일 송수신 시스템
+- type: Permission
+  canonical_name: 메일 대용량첨부
+  aliases:
+  - 대용량 첨부 권한
+  evidence: 메일 대용량첨부 권한이 있으면 큰 파일을 메일로 첨부할 수 있습니다.
+  system_name: 메일
+  level: READ
+- type: Policy
+  canonical_name: 대용량첨부 사전승인
+  aliases: []
+  evidence: 신규 입사자는 메일 대용량첨부를 하려면 부서장 사전 승인을 받아야 합니다.
+  valid_from: 2025-02-01
+  valid_to: null
+relations:
+- source_type: Permission
+  source_name: 메일 대용량첨부
+  relation_type: 'ON'
+  target_type: System
+  target_name: 메일
+  evidence: 메일 대용량첨부 권한이 있으면 큰 파일을 메일로 첨부할 수 있습니다.
+- source_type: Policy
+  source_name: 대용량첨부 사전승인
+  relation_type: GOVERNS
+  target_type: Permission
+  target_name: 메일 대용량첨부
+  evidence: 신규 입사자는 메일 대용량첨부를 하려면 부서장 사전 승인을 받아야 합니다.
+- source_type: Policy
+  source_name: 대용량첨부 사전승인
+  relation_type: APPLIES_TO
+  target_type: UserGroup
+  target_name: 신규 입사자
+  evidence: 신규 입사자는 메일 대용량첨부를 하려면 부서장 사전 승인을 받아야 합니다.
+policies:
+- name: 대용량첨부 사전승인
+  subject_group: 신규 입사자
+  system_name: 메일
+  level: READ
+  effect: REQUIRE_APPROVAL
+  conditions: 부서장 승인
+  valid_from: 2025-02-01
+  valid_to: null
+  evidence: 신규 입사자는 메일 대용량첨부를 하려면 부서장 사전 승인을 받아야 합니다.

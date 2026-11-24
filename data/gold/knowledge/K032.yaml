@@ -1,0 +1,66 @@
+id: K032
+title: 신규 입사자는 AD 관리자 권한을 가질 수 없다
+scenario_type: policy
+render_as:
+- guide
+- ticket
+entities:
+- type: UserGroup
+  canonical_name: 신규 입사자
+  aliases:
+  - 신입
+  - 신규 직원
+  - 입사자
+  evidence: 신규 입사자는 입사 후 30일이 지나지 않은 직원으로, 관리자 권한은 부여하지 않습니다.
+  kind: employment
+- type: System
+  canonical_name: AD 계정
+  aliases:
+  - AD
+  - 도메인 계정
+  - 사내 계정
+  evidence: AD 계정은 사내 PC와 메일, 업무 시스템 로그인에 쓰는 통합 계정 디렉터리입니다.
+  description: 사내 PC·메일·업무 시스템 로그인에 쓰는 통합 계정 디렉터리
+- type: Permission
+  canonical_name: AD 관리자
+  aliases:
+  - 도메인 관리자 권한
+  - AD 관리자 권한
+  evidence: AD 관리자는 계정과 그룹을 수정할 수 있는 고위험 권한입니다.
+  system_name: AD 계정
+  level: ADMIN
+- type: Policy
+  canonical_name: 신규 입사자 AD 관리자 금지
+  aliases: []
+  evidence: 신규 입사자에게는 AD 관리자 권한을 부여하지 않습니다.
+  valid_from: null
+  valid_to: null
+relations:
+- source_type: Permission
+  source_name: AD 관리자
+  relation_type: 'ON'
+  target_type: System
+  target_name: AD 계정
+  evidence: AD 관리자는 계정과 그룹을 수정할 수 있는 고위험 권한입니다.
+- source_type: Policy
+  source_name: 신규 입사자 AD 관리자 금지
+  relation_type: GOVERNS
+  target_type: Permission
+  target_name: AD 관리자
+  evidence: 신규 입사자에게는 AD 관리자 권한을 부여하지 않습니다.
+- source_type: Policy
+  source_name: 신규 입사자 AD 관리자 금지
+  relation_type: APPLIES_TO
+  target_type: UserGroup
+  target_name: 신규 입사자
+  evidence: 신규 입사자에게는 AD 관리자 권한을 부여하지 않습니다.
+policies:
+- name: 신규 입사자 AD 관리자 금지
+  subject_group: 신규 입사자
+  system_name: AD 계정
+  level: ADMIN
+  effect: DENY
+  conditions: null
+  valid_from: null
+  valid_to: null
+  evidence: 신규 입사자에게는 AD 관리자 권한을 부여하지 않습니다.

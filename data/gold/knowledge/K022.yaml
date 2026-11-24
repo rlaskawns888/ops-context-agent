@@ -1,0 +1,46 @@
+id: K022
+title: MFA 인증기기 미등록 시 재등록 절차
+scenario_type: official_procedure
+render_as:
+- guide
+entities:
+- type: System
+  canonical_name: MFA
+  aliases:
+  - 다중 인증
+  - 2차 인증
+  - OTP 인증
+  evidence: 새 휴대폰으로 바꾼 뒤 MFA 기기가 등록되지 않으면 인증이 진행되지 않습니다.
+  description: 휴대폰 앱 승인으로 본인을 한 번 더 확인하는 다중 인증 시스템
+- type: Error
+  canonical_name: E-202
+  aliases: []
+  evidence: 계정에 등록된 인증 기기가 없으면 MFA 승인이 진행되지 않습니다.
+  code: E-202
+  symptom: 등록된 인증 기기가 없어 로그인 불가
+- type: Solution
+  canonical_name: 인증기기 재등록
+  aliases: []
+  evidence: 인증 기기가 없을 때는 휴대폰 앱을 다시 등록하는 절차가 필요합니다.
+  steps:
+  - MFA 안내 화면에서 기기 미등록 메시지를 확인한다
+  - 기존 등록 기기가 없음을 확인한다
+  - 인증 앱 재등록 메뉴로 이동한다
+  - 새 휴대폰에서 QR 또는 초기화 코드를 사용해 다시 등록한다
+  knowledge_type: official
+  valid_from: null
+  valid_to: null
+relations:
+- source_type: Error
+  source_name: E-202
+  relation_type: OCCURS_IN
+  target_type: System
+  target_name: MFA
+  evidence: 계정에 등록된 인증 기기가 없으면 MFA 승인이 진행되지 않습니다.
+- source_type: Error
+  source_name: E-202
+  relation_type: RESOLVED_BY
+  target_type: Solution
+  target_name: 인증기기 재등록
+  evidence: 인증 기기가 없을 때는 휴대폰 앱을 다시 등록하는 절차가 필요합니다.
+policies: []

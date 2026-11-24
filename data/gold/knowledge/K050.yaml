@@ -1,0 +1,55 @@
+id: K050
+title: SSO 오류 E-303은 AD 계정 쪽 연결 문제다
+scenario_type: multihop
+render_as:
+- slack
+- minutes
+entities:
+- type: System
+  canonical_name: SSO
+  aliases:
+  - 통합 로그인
+  - 통합인증
+  evidence: SSO가 AD 계정에 연결하지 못해 로그인 전체가 실패합니다.
+  description: 한 번 로그인으로 사내 웹 시스템 전체에 접근하게 해 주는 통합 인증 시스템
+- type: System
+  canonical_name: AD 계정
+  aliases:
+  - AD
+  - 도메인 계정
+  - 사내 계정
+  evidence: SSO는 로그인 시 AD 계정 디렉터리에 연결해야 동작합니다.
+  description: 사내 PC·메일·업무 시스템 로그인에 쓰는 통합 계정 디렉터리
+- type: Team
+  canonical_name: 인프라운영팀
+  aliases:
+  - 인프라팀
+  - 시스템운영팀
+  evidence: AD 계정과 SSO는 인프라운영팀이 운영합니다.
+  channel: null
+- type: Error
+  canonical_name: E-303
+  aliases: []
+  evidence: SSO에서 계정 디렉터리 서버가 응답하지 않아 로그인 전체가 실패하는 E-303이 발생했습니다.
+  code: E-303
+  symptom: 계정 디렉터리 서버에 연결하지 못해 로그인 전체가 실패함
+relations:
+- source_type: Error
+  source_name: E-303
+  relation_type: OCCURS_IN
+  target_type: System
+  target_name: SSO
+  evidence: SSO에서 계정 디렉터리 서버가 응답하지 않아 로그인 전체가 실패하는 E-303이 발생했습니다.
+- source_type: System
+  source_name: SSO
+  relation_type: DEPENDS_ON
+  target_type: System
+  target_name: AD 계정
+  evidence: SSO가 AD 계정에 연결하지 못해 로그인 전체가 실패합니다.
+- source_type: System
+  source_name: AD 계정
+  relation_type: OWNED_BY
+  target_type: Team
+  target_name: 인프라운영팀
+  evidence: AD 계정과 SSO는 인프라운영팀이 운영합니다.
+policies: []

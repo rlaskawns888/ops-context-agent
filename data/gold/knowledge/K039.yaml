@@ -1,0 +1,99 @@
+id: K039
+title: 시스템 관리자의 운영DB 읽기 권한이 2026년부터 승인제에서 허용으로 바뀌었다
+scenario_type: policy_revision
+render_as:
+- guide
+- minutes
+entities:
+- type: UserGroup
+  canonical_name: 시스템 관리자
+  aliases:
+  - 시스템 운영자
+  - 관리자 계정 사용자
+  evidence: 이 규정은 시스템 관리자에게 적용됩니다.
+  kind: role
+- type: System
+  canonical_name: 운영DB
+  aliases:
+  - 운영 데이터베이스
+  - 프로덕션 DB
+  evidence: 운영DB는 실제 서비스 데이터가 저장된 운영 데이터베이스입니다.
+  description: 실제 서비스 데이터가 저장된 운영 데이터베이스
+- type: Permission
+  canonical_name: 운영DB READ
+  aliases:
+  - 운영DB 조회 권한
+  - 운영DB 읽기 권한
+  evidence: 운영DB READ는 운영DB의 데이터를 조회할 수 있는 권한입니다.
+  system_name: 운영DB
+  level: READ
+- type: Policy
+  canonical_name: 운영DB 읽기 사전승인 (2025-01-01)
+  aliases:
+  - 운영DB 읽기 사전승인
+  evidence: 2025년에는 시스템 관리자가 운영DB를 조회하려면 DBA팀 승인을 먼저 받아야 합니다.
+  valid_from: 2025-01-01
+  valid_to: 2025-12-31
+- type: Policy
+  canonical_name: 운영DB 읽기 허용 (2026-01-01)
+  aliases:
+  - 운영DB 읽기 허용
+  evidence: 2026년부터 시스템 관리자는 운영DB 조회를 별도 승인 없이 할 수 있습니다.
+  valid_from: 2026-01-01
+  valid_to: null
+relations:
+- source_type: Permission
+  source_name: 운영DB READ
+  relation_type: 'ON'
+  target_type: System
+  target_name: 운영DB
+  evidence: 운영DB READ는 운영DB의 데이터를 조회할 수 있는 권한입니다.
+- source_type: Policy
+  source_name: 운영DB 읽기 사전승인 (2025-01-01)
+  relation_type: GOVERNS
+  target_type: Permission
+  target_name: 운영DB READ
+  evidence: 2025년에는 시스템 관리자가 운영DB를 조회하려면 DBA팀 승인을 먼저 받아야 합니다.
+- source_type: Policy
+  source_name: 운영DB 읽기 사전승인 (2025-01-01)
+  relation_type: APPLIES_TO
+  target_type: UserGroup
+  target_name: 시스템 관리자
+  evidence: 2025년에는 시스템 관리자가 운영DB를 조회하려면 DBA팀 승인을 먼저 받아야 합니다.
+- source_type: Policy
+  source_name: 운영DB 읽기 허용 (2026-01-01)
+  relation_type: GOVERNS
+  target_type: Permission
+  target_name: 운영DB READ
+  evidence: 2026년부터 시스템 관리자는 운영DB 조회를 별도 승인 없이 할 수 있습니다.
+- source_type: Policy
+  source_name: 운영DB 읽기 허용 (2026-01-01)
+  relation_type: APPLIES_TO
+  target_type: UserGroup
+  target_name: 시스템 관리자
+  evidence: 2026년부터 시스템 관리자는 운영DB 조회를 별도 승인 없이 할 수 있습니다.
+- source_type: Policy
+  source_name: 운영DB 읽기 허용 (2026-01-01)
+  relation_type: SUPERSEDES
+  target_type: Policy
+  target_name: 운영DB 읽기 사전승인 (2025-01-01)
+  evidence: 운영DB 읽기 사전승인 규정은 2025년 말로 종료되고 2026년부터는 허용으로 바뀝니다.
+policies:
+- name: 운영DB 읽기 사전승인 (2025-01-01)
+  subject_group: 시스템 관리자
+  system_name: 운영DB
+  level: READ
+  effect: REQUIRE_APPROVAL
+  conditions: DBA팀 사전 승인
+  valid_from: 2025-01-01
+  valid_to: 2025-12-31
+  evidence: 2025년에는 시스템 관리자가 운영DB를 조회하려면 DBA팀 승인을 먼저 받아야 합니다.
+- name: 운영DB 읽기 허용 (2026-01-01)
+  subject_group: 시스템 관리자
+  system_name: 운영DB
+  level: READ
+  effect: ALLOW
+  conditions: null
+  valid_from: 2026-01-01
+  valid_to: null
+  evidence: 2026년부터 시스템 관리자는 운영DB 조회를 별도 승인 없이 할 수 있습니다.

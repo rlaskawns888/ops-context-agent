@@ -1,0 +1,46 @@
+id: K013
+title: EDR에서 E-632 오류는 허용 목록 반영 후 재부팅하면 풀린다
+scenario_type: tacit_fix
+render_as:
+- slack
+- ticket
+entities:
+- type: System
+  canonical_name: EDR
+  aliases:
+  - 엔드포인트 보안
+  - 단말 보안 에이전트
+  evidence: EDR가 새 프로그램을 의심 프로세스로 막았다는 문의가 종종 접수됩니다.
+  description: PC의 의심 행위를 탐지·차단하는 단말 보안 에이전트
+- type: Error
+  canonical_name: E-632
+  aliases: []
+  evidence: 허용 목록에 없는 프로그램이 실행되면 E-632로 차단됩니다.
+  code: E-632
+  symptom: 의심 프로세스가 차단됨
+- type: Solution
+  canonical_name: 허용 목록 재적용
+  aliases:
+  - 예외 반영
+  evidence: E-632는 허용 목록을 다시 반영하고 PC를 재부팅하면 정상 실행되는 경우가 있습니다.
+  steps:
+  - 차단된 프로그램의 예외 등록 여부를 확인한다
+  - 허용 목록을 다시 적용한다
+  - PC를 재부팅한 뒤 프로그램을 다시 실행한다
+  knowledge_type: tacit
+  valid_from: null
+  valid_to: null
+relations:
+- source_type: Error
+  source_name: E-632
+  relation_type: OCCURS_IN
+  target_type: System
+  target_name: EDR
+  evidence: 허용 목록에 없는 프로그램이 실행되면 E-632로 차단됩니다.
+- source_type: Error
+  source_name: E-632
+  relation_type: RESOLVED_BY
+  target_type: Solution
+  target_name: 허용 목록 재적용
+  evidence: E-632는 허용 목록을 다시 반영하고 PC를 재부팅하면 정상 실행되는 경우가 있습니다.
+policies: []

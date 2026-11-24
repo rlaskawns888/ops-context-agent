@@ -1,3 +1,4 @@
+from collections import Counter
 from pathlib import Path
 from typing import get_args
 
@@ -16,13 +17,20 @@ def gold() -> list[GoldKnowledge]:
     return load_gold_knowledge(GOLD_DIR)
 
 
-def test_all_five_files_load_and_validate(gold: list[GoldKnowledge]) -> None:
-    assert len(list(GOLD_DIR.glob("*.yaml"))) == 5
-    assert [k.id for k in gold] == ["K001", "K002", "K003", "K004", "K005"]
+def test_all_files_load_with_contiguous_ids(gold: list[GoldKnowledge]) -> None:
+    assert len(list(GOLD_DIR.glob("*.yaml"))) == len(gold)
+    assert [k.id for k in gold] == [f"K{i:03d}" for i in range(1, len(gold) + 1)]
 
 
-def test_each_scenario_type_appears_once(gold: list[GoldKnowledge]) -> None:
-    assert sorted(k.scenario_type for k in gold) == sorted(get_args(ScenarioType))
+def test_seed_gold_has_each_scenario_type_once(gold: list[GoldKnowledge]) -> None:
+    seeds = gold[:5]  # K001~K005: 손으로 만든 few-shot 예시
+    assert sorted(k.scenario_type for k in seeds) == sorted(get_args(ScenarioType))
+
+
+def test_scenario_types_are_balanced(gold: list[GoldKnowledge]) -> None:
+    counts = Counter(k.scenario_type for k in gold)
+    assert set(counts) == set(get_args(ScenarioType))
+    assert len(set(counts.values())) == 1
 
 
 def test_ids_unique_and_match_filenames(gold: list[GoldKnowledge]) -> None:

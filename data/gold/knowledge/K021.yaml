@@ -1,0 +1,46 @@
+id: K021
+title: VPN 인증서 만료 시 재발급 절차
+scenario_type: official_procedure
+render_as:
+- guide
+- slack
+entities:
+- type: System
+  canonical_name: VPN
+  aliases:
+  - 사내 VPN
+  - 원격접속
+  evidence: VPN 접속이 안 될 때는 클라이언트 인증서 만료 여부를 먼저 확인하고 재발급 절차를 진행합니다.
+  description: 외부에서 사내망에 접속하기 위한 원격접속 시스템
+- type: Error
+  canonical_name: E-101
+  aliases: []
+  evidence: 클라이언트 인증서가 만료되면 VPN 접속이 거부됩니다.
+  code: E-101
+  symptom: VPN 클라이언트 인증서 만료로 접속 불가
+- type: Solution
+  canonical_name: 인증서 재발급
+  aliases: []
+  evidence: 인증서가 만료되면 새 클라이언트 인증서를 발급받아 다시 설치해야 합니다.
+  steps:
+  - VPN 접속 오류 화면에서 인증서 만료 여부를 확인한다
+  - VPN 클라이언트에 로그인할 계정 정보를 준비한다
+  - 인증서 재발급 요청을 제출한다
+  - 승인 후 새 인증서를 설치하고 다시 접속한다
+  knowledge_type: official
+  valid_from: null
+  valid_to: null
+relations:
+- source_type: Error
+  source_name: E-101
+  relation_type: OCCURS_IN
+  target_type: System
+  target_name: VPN
+  evidence: 클라이언트 인증서가 만료되면 VPN 접속이 거부됩니다.
+- source_type: Error
+  source_name: E-101
+  relation_type: RESOLVED_BY
+  target_type: Solution
+  target_name: 인증서 재발급
+  evidence: 인증서가 만료되면 새 클라이언트 인증서를 발급받아 다시 설치해야 합니다.
+policies: []

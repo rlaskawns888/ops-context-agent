@@ -1,0 +1,99 @@
+id: K042
+title: 임원의 백신 검사 예외가 2025년 말부터 유지에서 사전승인으로 바뀌었다
+scenario_type: policy_revision
+render_as:
+- guide
+- minutes
+entities:
+- type: UserGroup
+  canonical_name: 임원
+  aliases:
+  - 경영진
+  - 임원진
+  evidence: 이 정책은 임원에게 적용됩니다.
+  kind: role
+- type: System
+  canonical_name: 백신
+  aliases:
+  - 백신 프로그램
+  - 안티바이러스
+  evidence: 백신은 PC의 악성코드를 검사·치료하는 백신 프로그램입니다.
+  description: PC의 악성코드를 검사·치료하는 백신 프로그램
+- type: Permission
+  canonical_name: 백신 검사 예외
+  aliases:
+  - 백신 예외 권한
+  - 실시간 감시 예외
+  evidence: 백신 검사 예외는 백신 검사를 잠시 제외하는 권한입니다.
+  system_name: 백신
+  level: ADMIN
+- type: Policy
+  canonical_name: 백신 예외 유지 (2025-01-01)
+  aliases:
+  - 백신 예외 유지
+  evidence: 2025년에는 임원 단말에 대해 백신 검사 예외를 계속 유지할 수 있었습니다.
+  valid_from: 2025-01-01
+  valid_to: 2025-12-31
+- type: Policy
+  canonical_name: 백신 예외 사전승인 (2026-01-01)
+  aliases:
+  - 백신 예외 승인 필요
+  evidence: 2026년부터 임원의 백신 검사 예외는 보안운영팀 사전 승인이 있어야만 적용됩니다.
+  valid_from: 2026-01-01
+  valid_to: null
+relations:
+- source_type: Permission
+  source_name: 백신 검사 예외
+  relation_type: 'ON'
+  target_type: System
+  target_name: 백신
+  evidence: 백신 검사 예외는 백신 검사를 잠시 제외하는 권한입니다.
+- source_type: Policy
+  source_name: 백신 예외 유지 (2025-01-01)
+  relation_type: GOVERNS
+  target_type: Permission
+  target_name: 백신 검사 예외
+  evidence: 2025년에는 임원 단말에 대해 백신 검사 예외를 계속 유지할 수 있었습니다.
+- source_type: Policy
+  source_name: 백신 예외 유지 (2025-01-01)
+  relation_type: APPLIES_TO
+  target_type: UserGroup
+  target_name: 임원
+  evidence: 2025년에는 임원 단말에 대해 백신 검사 예외를 계속 유지할 수 있었습니다.
+- source_type: Policy
+  source_name: 백신 예외 사전승인 (2026-01-01)
+  relation_type: GOVERNS
+  target_type: Permission
+  target_name: 백신 검사 예외
+  evidence: 2026년부터 임원의 백신 검사 예외는 보안운영팀 사전 승인이 있어야만 적용됩니다.
+- source_type: Policy
+  source_name: 백신 예외 사전승인 (2026-01-01)
+  relation_type: APPLIES_TO
+  target_type: UserGroup
+  target_name: 임원
+  evidence: 2026년부터 임원의 백신 검사 예외는 보안운영팀 사전 승인이 있어야만 적용됩니다.
+- source_type: Policy
+  source_name: 백신 예외 사전승인 (2026-01-01)
+  relation_type: SUPERSEDES
+  target_type: Policy
+  target_name: 백신 예외 유지 (2025-01-01)
+  evidence: 임원의 백신 검사 예외는 2025년 말까지 유지 방식이었고 2026년부터 사전 승인 방식으로 바뀝니다.
+policies:
+- name: 백신 예외 유지 (2025-01-01)
+  subject_group: 임원
+  system_name: 백신
+  level: ADMIN
+  effect: ALLOW
+  conditions: null
+  valid_from: 2025-01-01
+  valid_to: 2025-12-31
+  evidence: 2025년에는 임원 단말에 대해 백신 검사 예외를 계속 유지할 수 있었습니다.
+- name: 백신 예외 사전승인 (2026-01-01)
+  subject_group: 임원
+  system_name: 백신
+  level: ADMIN
+  effect: REQUIRE_APPROVAL
+  conditions: 보안운영팀 사전 승인
+  valid_from: 2026-01-01
+  valid_to: null
+  evidence: 2026년부터 임원의 백신 검사 예외는 보안운영팀 사전 승인이 있어야만 적용됩니다.

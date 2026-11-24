@@ -1,0 +1,78 @@
+id: K055
+title: 신규 입사자의 메일 외부발송 금지
+scenario_type: multihop
+render_as:
+- ticket
+- slack
+entities:
+- type: System
+  canonical_name: 메일
+  aliases:
+  - 사내 메일
+  - 웹메일
+  - 메일 서버
+  evidence: 신규 입사자는 메일 외부발송 권한이 없어 사외 발송이 막힙니다.
+  description: 사내 메일 송수신 시스템
+- type: Permission
+  canonical_name: 메일 외부발송
+  aliases:
+  - 외부 메일 발송 권한
+  evidence: 신규 입사자에게는 메일 외부발송 권한을 부여하지 않습니다.
+  system_name: 메일
+  level: WRITE
+- type: UserGroup
+  canonical_name: 신규 입사자
+  aliases:
+  - 신입
+  - 신규 직원
+  - 입사자
+  evidence: 신규 입사자는 메일 외부발송 금지 정책의 대상입니다.
+  kind: employment
+- type: Team
+  canonical_name: 인프라운영팀
+  aliases:
+  - 인프라팀
+  - 시스템운영팀
+  evidence: 메일은 인프라운영팀이 운영합니다.
+  channel: null
+- type: Policy
+  canonical_name: 신규 입사자의 메일 외부발송 금지
+  aliases: []
+  evidence: 신규 입사자의 메일 외부발송 금지 정책이 적용됩니다.
+  valid_from: 2025-01-01
+  valid_to: 2026-11-30
+relations:
+- source_type: Policy
+  source_name: 신규 입사자의 메일 외부발송 금지
+  relation_type: APPLIES_TO
+  target_type: UserGroup
+  target_name: 신규 입사자
+  evidence: 신규 입사자의 메일 외부발송 금지 정책은 신규 입사자에게 적용됩니다.
+- source_type: Policy
+  source_name: 신규 입사자의 메일 외부발송 금지
+  relation_type: GOVERNS
+  target_type: Permission
+  target_name: 메일 외부발송
+  evidence: 신규 입사자의 메일 외부발송 금지 정책은 메일 외부발송 권한을 금지합니다.
+- source_type: Permission
+  source_name: 메일 외부발송
+  relation_type: 'ON'
+  target_type: System
+  target_name: 메일
+  evidence: 메일 외부발송 권한은 메일 시스템에 대한 권한입니다.
+- source_type: System
+  source_name: 메일
+  relation_type: OWNED_BY
+  target_type: Team
+  target_name: 인프라운영팀
+  evidence: 메일은 인프라운영팀이 운영합니다.
+policies:
+- name: 신규 입사자의 메일 외부발송 금지
+  subject_group: 신규 입사자
+  system_name: 메일
+  level: WRITE
+  effect: DENY
+  conditions: null
+  valid_from: 2025-01-01
+  valid_to: 2026-11-30
+  evidence: 신규 입사자는 메일 외부발송 권한이 없어 사외 발송이 막힙니다.

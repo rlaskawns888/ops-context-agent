@@ -1,0 +1,49 @@
+id: K017
+title: 운영계 배포는 승인 후 진행한다
+scenario_type: official_procedure
+render_as:
+- guide
+- slack
+entities:
+- type: Solution
+  canonical_name: 배포 승인 절차
+  aliases:
+  - 운영 배포 승인 절차
+  - 배포 승인
+  evidence: 운영계 배포는 승인 없이 실행할 수 없으므로 먼저 승인 절차를 거쳐야 합니다.
+  steps:
+  - 배포시스템에서 운영계 배포 요청을 등록한다
+  - 변경 내용과 영향 범위를 함께 제출한다
+  - 승인권자의 승인을 받은 뒤 배포를 실행한다
+  - 배포 완료 후 결과를 확인하고 이상 여부를 보고한다
+  knowledge_type: official
+  valid_from: null
+  valid_to: null
+- type: Error
+  canonical_name: 운영 배포 제한
+  aliases: []
+  evidence: 운영계 배포는 승인 없이 실행할 수 없다는 안내가 표시됩니다.
+  code: E-931
+  symptom: 승인 없이 운영계 배포를 실행할 수 없음
+- type: System
+  canonical_name: 배포시스템
+  aliases:
+  - 배포 파이프라인
+  - CI/CD
+  - 배포툴
+  evidence: 운영계 배포 승인이 필요합니다는 배포시스템에서 발생하는 오류입니다.
+  description: 형상관리의 코드를 빌드해 개발계·운영계에 배포하는 시스템
+relations:
+- source_type: Error
+  source_name: 운영 배포 제한
+  relation_type: OCCURS_IN
+  target_type: System
+  target_name: 배포시스템
+  evidence: 운영계 배포 승인이 필요합니다는 배포시스템에서 발생하는 오류입니다.
+- source_type: Error
+  source_name: 운영 배포 제한
+  relation_type: RESOLVED_BY
+  target_type: Solution
+  target_name: 배포 승인 절차
+  evidence: 운영계 배포는 승인 없이 실행할 수 없으므로 먼저 승인 절차를 거쳐야 합니다.
+policies: []

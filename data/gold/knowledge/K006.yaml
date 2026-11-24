@@ -1,0 +1,49 @@
+id: K006
+title: SSO 세션이 사라진 E-302는 브라우저 쿠키 삭제 후 다시 로그인하면 풀린다
+scenario_type: tacit_fix
+render_as:
+- slack
+- ticket
+entities:
+- type: System
+  canonical_name: SSO
+  aliases:
+  - 통합 로그인
+  - 통합인증
+  evidence: 브라우저 쿠키를 지운 뒤 다시 로그인하니 SSO 화면이 정상적으로 열렸습니다.
+  description: 한 번 로그인으로 사내 웹 시스템 전체에 접근하게 해 주는 통합 인증 시스템
+- type: Error
+  canonical_name: E-302
+  aliases:
+  - SSO 302 오류
+  - 세션 없음 오류
+  evidence: SSO에서 로그인하려는데 E-302가 떠서 세션 정보를 찾을 수 없었습니다.
+  code: E-302
+  symptom: SSO 세션 정보 없음
+- type: Solution
+  canonical_name: 쿠키 삭제 후 재로그인
+  aliases:
+  - 쿠키 초기화
+  - 브라우저 초기화 후 재접속
+  evidence: E-302가 나면 브라우저 쿠키를 삭제하고 다시 로그인하면 대부분 해결됩니다.
+  steps:
+  - 브라우저의 SSO 쿠키와 사이트 데이터를 삭제한다
+  - 브라우저를 완전히 종료한 뒤 다시 연다
+  - SSO에 재로그인한다
+  knowledge_type: tacit
+  valid_from: null
+  valid_to: null
+relations:
+- source_type: Error
+  source_name: E-302
+  relation_type: OCCURS_IN
+  target_type: System
+  target_name: SSO
+  evidence: SSO에서 로그인하려는데 E-302가 떠서 세션 정보를 찾을 수 없었습니다.
+- source_type: Error
+  source_name: E-302
+  relation_type: RESOLVED_BY
+  target_type: Solution
+  target_name: 쿠키 삭제 후 재로그인
+  evidence: E-302가 나면 브라우저 쿠키를 삭제하고 다시 로그인하면 대부분 해결됩니다.
+policies: []

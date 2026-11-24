@@ -1,0 +1,45 @@
+id: K014
+title: 백신 E-661 엔진 업데이트 실패는 캐시 삭제 후 재실행하면 해결된다 (암묵지)
+scenario_type: tacit_fix
+render_as:
+- slack
+- ticket
+entities:
+- type: System
+  canonical_name: 백신
+  aliases:
+  - 백신 프로그램
+  - 안티바이러스
+  evidence: 백신 엔진 업데이트가 계속 실패하면 캐시를 정리한 뒤 다시 시도해 보라는 안내를 받았습니다.
+  description: PC의 악성코드를 검사·치료하는 백신 프로그램
+- type: Error
+  canonical_name: E-661
+  aliases: []
+  evidence: 백신에서 엔진 업데이트에 실패했다는 E-661 오류가 반복해서 발생했습니다.
+  code: E-661
+  symptom: 엔진 업데이트 실패
+- type: Solution
+  canonical_name: 캐시 삭제 후 재실행
+  aliases: []
+  evidence: E-661은 백신 캐시를 삭제한 뒤 업데이트를 다시 실행하면 대부분 해결됩니다.
+  steps:
+  - 백신 업데이트 화면을 닫는다
+  - 백신 캐시와 임시 파일을 삭제한다
+  - 백신을 다시 실행해 엔진 업데이트를 재시도한다
+  knowledge_type: tacit
+  valid_from: null
+  valid_to: null
+relations:
+- source_type: Error
+  source_name: E-661
+  relation_type: OCCURS_IN
+  target_type: System
+  target_name: 백신
+  evidence: 백신에서 엔진 업데이트에 실패했다는 E-661 오류가 반복해서 발생했습니다.
+- source_type: Error
+  source_name: E-661
+  relation_type: RESOLVED_BY
+  target_type: Solution
+  target_name: 캐시 삭제 후 재실행
+  evidence: E-661은 백신 캐시를 삭제한 뒤 업데이트를 다시 실행하면 대부분 해결됩니다.
+policies: []

@@ -1,0 +1,98 @@
+id: K043
+title: 외주의 개발DB 쓰기가 2026년부터 금지에서 사전 승인 필요로 바뀌었다
+scenario_type: policy_revision
+render_as:
+- guide
+- minutes
+entities:
+- type: UserGroup
+  canonical_name: 외주
+  aliases:
+  - 외주 인력
+  - 협력사 인력
+  evidence: 이 정책은 외주 인력에게 적용됩니다.
+  kind: employment
+- type: System
+  canonical_name: 개발DB
+  aliases:
+  - 개발 데이터베이스
+  - 개발계 DB
+  evidence: 개발DB는 개발·테스트용 데이터베이스입니다.
+  description: 개발·테스트용 데이터베이스
+- type: Permission
+  canonical_name: 개발DB WRITE
+  aliases:
+  - 개발DB 쓰기 권한
+  evidence: 개발DB WRITE 권한은 개발DB에 데이터를 수정하고 반영할 수 있는 권한입니다.
+  system_name: 개발DB
+  level: WRITE
+- type: Policy
+  canonical_name: 외주 개발DB 쓰기 금지 (2025-01-01)
+  aliases:
+  - 외주 개발DB 쓰기 금지
+  evidence: 2025년 1월 1일부터 외주 인력은 개발DB 쓰기 권한을 가질 수 없습니다.
+  valid_from: 2025-01-01
+  valid_to: 2025-12-31
+- type: Policy
+  canonical_name: 외주 개발DB 쓰기 사전 승인 필요 (2026-01-01)
+  aliases:
+  - 외주 개발DB 쓰기 사전 승인 필요
+  evidence: 2026년 1월 1일부터 외주 인력이 개발DB에 쓰기 권한을 받으려면 사전 승인을 받아야 합니다.
+  valid_from: 2026-01-01
+  valid_to: null
+relations:
+- source_type: Permission
+  source_name: 개발DB WRITE
+  relation_type: 'ON'
+  target_type: System
+  target_name: 개발DB
+  evidence: 개발DB WRITE 권한은 개발DB에 데이터를 수정하고 반영할 수 있는 권한입니다.
+- source_type: Policy
+  source_name: 외주 개발DB 쓰기 금지 (2025-01-01)
+  relation_type: GOVERNS
+  target_type: Permission
+  target_name: 개발DB WRITE
+  evidence: 2025년 1월 1일부터 외주 인력은 개발DB 쓰기 권한을 가질 수 없습니다.
+- source_type: Policy
+  source_name: 외주 개발DB 쓰기 금지 (2025-01-01)
+  relation_type: APPLIES_TO
+  target_type: UserGroup
+  target_name: 외주
+  evidence: 2025년 1월 1일부터 외주 인력은 개발DB 쓰기 권한을 가질 수 없습니다.
+- source_type: Policy
+  source_name: 외주 개발DB 쓰기 사전 승인 필요 (2026-01-01)
+  relation_type: GOVERNS
+  target_type: Permission
+  target_name: 개발DB WRITE
+  evidence: 2026년 1월 1일부터 외주 인력이 개발DB에 쓰기 권한을 받으려면 사전 승인을 받아야 합니다.
+- source_type: Policy
+  source_name: 외주 개발DB 쓰기 사전 승인 필요 (2026-01-01)
+  relation_type: APPLIES_TO
+  target_type: UserGroup
+  target_name: 외주
+  evidence: 2026년 1월 1일부터 외주 인력이 개발DB에 쓰기 권한을 받으려면 사전 승인을 받아야 합니다.
+- source_type: Policy
+  source_name: 외주 개발DB 쓰기 사전 승인 필요 (2026-01-01)
+  relation_type: SUPERSEDES
+  target_type: Policy
+  target_name: 외주 개발DB 쓰기 금지 (2025-01-01)
+  evidence: 기존 외주 개발DB 쓰기 금지 규정은 2025년 12월 31일로 종료되고 2026년부터 사전 승인제로 바뀝니다.
+policies:
+- name: 외주 개발DB 쓰기 금지 (2025-01-01)
+  subject_group: 외주
+  system_name: 개발DB
+  level: WRITE
+  effect: DENY
+  conditions: null
+  valid_from: 2025-01-01
+  valid_to: 2025-12-31
+  evidence: 2025년 1월 1일부터 외주 인력은 개발DB 쓰기 권한을 가질 수 없습니다.
+- name: 외주 개발DB 쓰기 사전 승인 필요 (2026-01-01)
+  subject_group: 외주
+  system_name: 개발DB
+  level: WRITE
+  effect: REQUIRE_APPROVAL
+  conditions: 사전 승인
+  valid_from: 2026-01-01
+  valid_to: null
+  evidence: 2026년 1월 1일부터 외주 인력이 개발DB에 쓰기 권한을 받으려면 사전 승인을 받아야 합니다.

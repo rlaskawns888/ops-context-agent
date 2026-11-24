@@ -1,0 +1,47 @@
+id: K011
+title: 티켓 시스템의 E-981 오류는 승인권자 정보를 다시 넣어 제출하면 해결된다
+scenario_type: tacit_fix
+render_as:
+- slack
+- ticket
+entities:
+- type: System
+  canonical_name: 티켓 시스템
+  aliases:
+  - ITSM
+  - IT 요청 시스템
+  - 서비스 요청
+  evidence: 티켓 시스템은 필수 항목이 비거나 승인권자 정보가 없으면 요청서 제출이 막힙니다.
+  description: IT 장애 신고·계정·권한 신청을 접수하고 처리 상태를 관리하는 시스템
+- type: Error
+  canonical_name: E-981
+  aliases: []
+  evidence: 요청서를 제출하려고 하면 승인권자 정보가 없을 때 E-981이 발생합니다.
+  code: E-981
+  symptom: 요청서를 제출할 수 없음
+- type: Solution
+  canonical_name: 승인권자 재지정
+  aliases:
+  - 승인자 수정
+  evidence: E-981은 승인권자 정보를 다시 지정한 뒤 제출하면 접수되는 경우가 많습니다.
+  steps:
+  - 요청서의 승인권자 항목을 연다
+  - 부서에 맞는 승인권자를 다시 선택한다
+  - 필수 항목을 확인한 뒤 요청서를 다시 제출한다
+  knowledge_type: tacit
+  valid_from: null
+  valid_to: null
+relations:
+- source_type: Error
+  source_name: E-981
+  relation_type: OCCURS_IN
+  target_type: System
+  target_name: 티켓 시스템
+  evidence: 요청서를 제출하려고 하면 승인권자 정보가 없을 때 E-981이 발생합니다.
+- source_type: Error
+  source_name: E-981
+  relation_type: RESOLVED_BY
+  target_type: Solution
+  target_name: 승인권자 재지정
+  evidence: E-981은 승인권자 정보를 다시 지정한 뒤 제출하면 접수되는 경우가 많습니다.
+policies: []

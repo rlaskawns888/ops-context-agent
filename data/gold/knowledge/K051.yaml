@@ -1,0 +1,54 @@
+id: K051
+title: 포털 메뉴 오류 E-961은 SSO 권한 흐름에서 난다
+scenario_type: multihop
+render_as:
+- slack
+entities:
+- type: System
+  canonical_name: 사내 포털
+  aliases:
+  - 포털
+  - 인트라넷
+  - EP
+  evidence: 포털은 사용자 권한 정보를 조회해 메뉴를 구성합니다.
+  description: 사내 공지와 각 업무 시스템 바로가기를 모은 첫 화면
+- type: System
+  canonical_name: SSO
+  aliases:
+  - 통합 로그인
+  - 통합인증
+  evidence: 사내 포털은 SSO를 통해 로그인 정보를 확인합니다.
+  description: 한 번 로그인으로 사내 웹 시스템 전체에 접근하게 해 주는 통합 인증 시스템
+- type: Team
+  canonical_name: 인프라운영팀
+  aliases:
+  - 인프라팀
+  - 시스템운영팀
+  evidence: 사내 포털과 SSO는 인프라운영팀이 운영합니다.
+  channel: null
+- type: Error
+  canonical_name: E-961
+  aliases: []
+  evidence: 사내 포털에서 사용자 권한 정보 조회가 실패해 포털 메뉴를 불러올 수 없는 E-961이 발생했습니다.
+  code: E-961
+  symptom: 권한 정보 조회 실패로 포털 메뉴가 비어 보임
+relations:
+- source_type: Error
+  source_name: E-961
+  relation_type: OCCURS_IN
+  target_type: System
+  target_name: 사내 포털
+  evidence: 사내 포털에서 사용자 권한 정보 조회가 실패해 포털 메뉴를 불러올 수 없는 E-961이 발생했습니다.
+- source_type: System
+  source_name: 사내 포털
+  relation_type: DEPENDS_ON
+  target_type: System
+  target_name: SSO
+  evidence: 사내 포털은 SSO를 통해 로그인 정보를 확인합니다.
+- source_type: System
+  source_name: SSO
+  relation_type: OWNED_BY
+  target_type: Team
+  target_name: 인프라운영팀
+  evidence: 사내 포털과 SSO는 인프라운영팀이 운영합니다.
+policies: []

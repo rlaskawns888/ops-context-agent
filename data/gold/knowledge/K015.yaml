@@ -1,0 +1,45 @@
+id: K015
+title: 개발DB E-851 계정 만료는 새 임시 계정 발급으로 해결된다 (암묵지)
+scenario_type: tacit_fix
+render_as:
+- ticket
+- slack
+entities:
+- type: System
+  canonical_name: 개발DB
+  aliases:
+  - 개발 데이터베이스
+  - 개발계 DB
+  evidence: 개발DB 임시 계정이 만료되면 다시 접속할 수 없다는 문의가 들어왔습니다.
+  description: 개발·테스트용 데이터베이스
+- type: Error
+  canonical_name: E-851
+  aliases: []
+  evidence: 개발DB 접속 시 E-851 계정 만료 오류가 떠서 접속이 막혔습니다.
+  code: E-851
+  symptom: 접속 계정 만료
+- type: Solution
+  canonical_name: 새 임시 계정 발급
+  aliases: []
+  evidence: E-851이 나오면 만료된 계정 대신 새 임시 계정을 다시 발급받아 접속하면 됩니다.
+  steps:
+  - 만료된 개발DB 계정 사용을 중단한다
+  - DB운영팀에 새 임시 계정 발급을 요청한다
+  - 발급된 새 계정으로 다시 접속한다
+  knowledge_type: tacit
+  valid_from: null
+  valid_to: null
+relations:
+- source_type: Error
+  source_name: E-851
+  relation_type: OCCURS_IN
+  target_type: System
+  target_name: 개발DB
+  evidence: 개발DB 접속 시 E-851 계정 만료 오류가 떠서 접속이 막혔습니다.
+- source_type: Error
+  source_name: E-851
+  relation_type: RESOLVED_BY
+  target_type: Solution
+  target_name: 새 임시 계정 발급
+  evidence: E-851이 나오면 만료된 계정 대신 새 임시 계정을 다시 발급받아 접속하면 됩니다.
+policies: []

@@ -1,0 +1,45 @@
+id: K025
+title: EDR 통신 오류는 정책 동기화 후 재접속한다
+scenario_type: official_procedure
+render_as:
+- guide
+entities:
+- type: System
+  canonical_name: EDR
+  aliases:
+  - 엔드포인트 보안
+  - 단말 보안 에이전트
+  evidence: EDR 에이전트가 관리 서버에 정책을 받아오지 못하면 통신 오류가 발생할 수 있습니다.
+  description: PC의 의심 행위를 탐지·차단하는 단말 보안 에이전트
+- type: Error
+  canonical_name: 연결 실패
+  aliases: []
+  evidence: 관리 서버와 통신할 수 없으면 EDR 정책 동기화가 중단됩니다.
+  code: E-631
+  symptom: EDR 에이전트가 관리 서버에 연결하지 못해 정책을 받지 못함
+- type: Solution
+  canonical_name: 정책 동기화 절차
+  aliases: []
+  evidence: 관리 서버 통신 오류는 에이전트 재연결 후 정책 동기화로 처리합니다.
+  steps:
+  - EDR 에이전트 상태를 확인한다
+  - 네트워크 연결이 정상인지 점검한다
+  - 에이전트를 재시작해 관리 서버에 다시 연결한다
+  - 정책 수신 여부를 확인한다
+  knowledge_type: official
+  valid_from: null
+  valid_to: null
+relations:
+- source_type: Error
+  source_name: 연결 실패
+  relation_type: OCCURS_IN
+  target_type: System
+  target_name: EDR
+  evidence: 관리 서버와 통신할 수 없으면 EDR 정책 동기화가 중단됩니다.
+- source_type: Error
+  source_name: 연결 실패
+  relation_type: RESOLVED_BY
+  target_type: Solution
+  target_name: 정책 동기화 절차
+  evidence: 관리 서버 통신 오류는 에이전트 재연결 후 정책 동기화로 처리합니다.
+policies: []
