@@ -62,6 +62,7 @@ agent-api 코드에서 ops-api를 HTTP로 직접 호출하거나 ops-api 패키�
 - **LLM 출력은 Pydantic으로 검증한다.** 자유 텍스트를 파싱해서 쓰지 않는다.
 - **LLM 호출은 전부 Langfuse로 추적한다.** 추적되지 않는 LLM 호출 경로를 만들지 않는다.
 - **평가 수치를 임의로 만들지 않는다.** 실제 실행 결과만 보고하고, 실행하지 않았으면 실행하지 않았다고 말한다. `experiments.md`는 사용자가 직접 작성한다.
+- **services/ 하위 코드는 data/labels, data/gold, data/generated를 읽지 않는다.** 적재 입력은 data/raw만 사용한다. (평가 코드 eval/만 labels·gold 접근 가능, `scripts/tests/test_data_boundary.py`가 검사)
 - **테스트 없는 기능은 완료로 보지 않는다.** 기능마다 해당 서비스의 `tests/`에 테스트를 추가하고 통과를 확인한다.
 
 ## 실행 명령

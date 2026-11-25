@@ -1,0 +1,860 @@
+{"doc_id":"GD-001","gold_ids":["K002"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-002","gold_ids":["K003"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-003","gold_ids":["K004"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-004","gold_ids":["K017"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-005","gold_ids":["K018"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-006","gold_ids":["K019"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-007","gold_ids":["K020"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-008","gold_ids":["K021"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-009","gold_ids":["K022"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-010","gold_ids":["K023"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-011","gold_ids":["K024"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-012","gold_ids":["K025"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-013","gold_ids":["K026"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-014","gold_ids":["K027"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-015","gold_ids":["K028"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-016","gold_ids":["K031"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-017","gold_ids":["K032"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-018","gold_ids":["K033"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-019","gold_ids":["K035"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-020","gold_ids":["K036"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-021","gold_ids":["K038"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-022","gold_ids":["K039"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-023","gold_ids":["K040"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-024","gold_ids":["K041"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-025","gold_ids":["K042"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-026","gold_ids":["K043"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-027","gold_ids":["K044"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-028","gold_ids":["K045"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-029","gold_ids":["K046"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-030","gold_ids":["K047"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-031","gold_ids":["K048"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-032","gold_ids":["K049"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"GD-033","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"GD-034","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"GD-035","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"GD-036","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"GD-037","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"GD-038","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"GD-039","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"GD-040","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"MN-001","gold_ids":["K004","K005"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"MN-002","gold_ids":["K018","K039"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"MN-003","gold_ids":["K029","K058"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"MN-004","gold_ids":["K033","K045"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"MN-005","gold_ids":["K040"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"MN-006","gold_ids":["K041"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"MN-007","gold_ids":["K042"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"MN-008","gold_ids":["K043"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"MN-009","gold_ids":["K044"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"MN-010","gold_ids":["K046"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"MN-011","gold_ids":["K047"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"MN-012","gold_ids":["K048"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"MN-013","gold_ids":["K049"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"MN-014","gold_ids":["K050"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"MN-015","gold_ids":["K052"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"MN-016","gold_ids":["K054"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"MN-017","gold_ids":["K056"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"MN-018","gold_ids":["K057"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"MN-019","gold_ids":["K059"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"MN-020","gold_ids":["K060"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0001","gold_ids":["K001"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0002","gold_ids":["K002"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0003","gold_ids":["K005"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0004","gold_ids":["K006"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0005","gold_ids":["K007"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0006","gold_ids":["K008"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0007","gold_ids":["K009"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0008","gold_ids":["K010"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0009","gold_ids":["K011"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0010","gold_ids":["K012"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0011","gold_ids":["K013"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0012","gold_ids":["K014"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0013","gold_ids":["K015"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0014","gold_ids":["K016"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0015","gold_ids":["K017"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0016","gold_ids":["K021"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0017","gold_ids":["K024"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0018","gold_ids":["K030"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0019","gold_ids":["K034"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0020","gold_ids":["K037"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0021","gold_ids":["K050"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0022","gold_ids":["K051"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0023","gold_ids":["K052"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0024","gold_ids":["K053"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0025","gold_ids":["K054"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0026","gold_ids":["K055"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0027","gold_ids":["K056"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0028","gold_ids":["K058"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0029","gold_ids":["K059"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0030","gold_ids":["K060"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"SL-0031","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0032","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"권한 신청"}
+{"doc_id":"SL-0033","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0034","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0035","gold_ids":[],"related_gold_ids":["K025"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0036","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"SL-0037","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0038","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0039","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0040","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0041","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0042","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0043","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"SL-0044","gold_ids":[],"related_gold_ids":["K054"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"SL-0045","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0046","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0047","gold_ids":[],"related_gold_ids":["K005"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0048","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0049","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0050","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0051","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0052","gold_ids":[],"related_gold_ids":["K012"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0053","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0054","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"SL-0055","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"SL-0056","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0057","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0058","gold_ids":[],"related_gold_ids":["K031"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"SL-0059","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"SL-0060","gold_ids":[],"related_gold_ids":["K008"],"noise_kind":"repeat","issue_category":"메일·그룹웨어"}
+{"doc_id":"SL-0061","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0062","gold_ids":[],"related_gold_ids":["K029"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"SL-0063","gold_ids":[],"related_gold_ids":["K022"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0064","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0065","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0066","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0067","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"SL-0068","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0069","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0070","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0071","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"SL-0072","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"SL-0073","gold_ids":[],"related_gold_ids":["K059"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0074","gold_ids":[],"related_gold_ids":["K006"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0075","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"SL-0076","gold_ids":[],"related_gold_ids":["K058"],"noise_kind":"repeat","issue_category":"메일·그룹웨어"}
+{"doc_id":"SL-0077","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0078","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"SL-0079","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"망연계"}
+{"doc_id":"SL-0080","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0081","gold_ids":[],"related_gold_ids":["K013"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0082","gold_ids":[],"related_gold_ids":["K046"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"SL-0083","gold_ids":[],"related_gold_ids":["K006"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0084","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0085","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0086","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0087","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0088","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0089","gold_ids":[],"related_gold_ids":["K001"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"SL-0090","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0091","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0092","gold_ids":[],"related_gold_ids":["K015"],"noise_kind":"repeat","issue_category":"기타"}
+{"doc_id":"SL-0093","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"VPN"}
+{"doc_id":"SL-0094","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0095","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0096","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"SL-0097","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0098","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0099","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0100","gold_ids":[],"related_gold_ids":["K001"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"SL-0101","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"SL-0102","gold_ids":[],"related_gold_ids":["K051"],"noise_kind":"repeat","issue_category":"기타"}
+{"doc_id":"SL-0103","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0104","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0105","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0106","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0107","gold_ids":[],"related_gold_ids":["K021"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"SL-0108","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0109","gold_ids":[],"related_gold_ids":["K001"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"SL-0110","gold_ids":[],"related_gold_ids":["K005"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0111","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"SL-0112","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0113","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0114","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0115","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0116","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0117","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0118","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0119","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0120","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"메일·그룹웨어"}
+{"doc_id":"SL-0121","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0122","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0123","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0124","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0125","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"망연계"}
+{"doc_id":"SL-0126","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0127","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0128","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"SL-0129","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0130","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0131","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"권한 신청"}
+{"doc_id":"SL-0132","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"SL-0133","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0134","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"SL-0135","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0136","gold_ids":[],"related_gold_ids":["K021"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"SL-0137","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0138","gold_ids":[],"related_gold_ids":["K050"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0139","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0140","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"SL-0141","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0142","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0143","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0144","gold_ids":[],"related_gold_ids":["K059"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0145","gold_ids":[],"related_gold_ids":["K047"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"SL-0146","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0147","gold_ids":[],"related_gold_ids":["K021"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"SL-0148","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"SL-0149","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0150","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"SL-0151","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0152","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0153","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"SL-0154","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0155","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"SL-0156","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0157","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0158","gold_ids":[],"related_gold_ids":["K018"],"noise_kind":"repeat","issue_category":"기타"}
+{"doc_id":"SL-0159","gold_ids":[],"related_gold_ids":["K048"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"SL-0160","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0161","gold_ids":[],"related_gold_ids":["K032"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"SL-0162","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0163","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0164","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0165","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"메일·그룹웨어"}
+{"doc_id":"SL-0166","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0167","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0168","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0169","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0170","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0171","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0172","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0173","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0174","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0175","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"SL-0176","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"SL-0177","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0178","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0179","gold_ids":[],"related_gold_ids":["K007"],"noise_kind":"repeat","issue_category":"메일·그룹웨어"}
+{"doc_id":"SL-0180","gold_ids":[],"related_gold_ids":["K009"],"noise_kind":"repeat","issue_category":"망연계"}
+{"doc_id":"SL-0181","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"권한 신청"}
+{"doc_id":"SL-0182","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"SL-0183","gold_ids":[],"related_gold_ids":["K060"],"noise_kind":"repeat","issue_category":"망연계"}
+{"doc_id":"SL-0184","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"SL-0185","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0186","gold_ids":[],"related_gold_ids":["K043"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"SL-0187","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0188","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0189","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0190","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"VPN"}
+{"doc_id":"SL-0191","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0192","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"SL-0193","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0194","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0195","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"SL-0196","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0197","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0198","gold_ids":[],"related_gold_ids":["K050"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0199","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0200","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0201","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"SL-0202","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0203","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0204","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0205","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0206","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0207","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"SL-0208","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0209","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0210","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0211","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0212","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0213","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0214","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0215","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0216","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"VPN"}
+{"doc_id":"SL-0217","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0218","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0219","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0220","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0221","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0222","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"VPN"}
+{"doc_id":"SL-0223","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0224","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0225","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0226","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0227","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"SL-0228","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0229","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0230","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0231","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0232","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0233","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0234","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"SL-0235","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"SL-0236","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0237","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0238","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0239","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0240","gold_ids":[],"related_gold_ids":["K014"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0241","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0242","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0243","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0244","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0245","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0246","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0247","gold_ids":[],"related_gold_ids":["K019"],"noise_kind":"repeat","issue_category":"메일·그룹웨어"}
+{"doc_id":"SL-0248","gold_ids":[],"related_gold_ids":["K023"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0249","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0250","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0251","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0252","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0253","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"기타"}
+{"doc_id":"SL-0254","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0255","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0256","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0257","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0258","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0259","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0260","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0261","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0262","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"SL-0263","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0264","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0265","gold_ids":[],"related_gold_ids":["K001"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"SL-0266","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0267","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0268","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0269","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0270","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"SL-0271","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0272","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0273","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0274","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0275","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0276","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0277","gold_ids":[],"related_gold_ids":["K021"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"SL-0278","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0279","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0280","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0281","gold_ids":[],"related_gold_ids":[],"noise_kind":"unresolved","issue_category":"권한 신청"}
+{"doc_id":"SL-0282","gold_ids":[],"related_gold_ids":["K022"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0283","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"SL-0284","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0285","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0286","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0287","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0288","gold_ids":[],"related_gold_ids":["K053"],"noise_kind":"repeat","issue_category":"망연계"}
+{"doc_id":"SL-0289","gold_ids":[],"related_gold_ids":["K026"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"SL-0290","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0291","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0292","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0293","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"SL-0294","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"SL-0295","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"SL-0296","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"SL-0297","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"SL-0298","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"SL-0299","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"SL-0300","gold_ids":[],"related_gold_ids":["K027"],"noise_kind":"repeat","issue_category":"망연계"}
+{"doc_id":"TK-0001","gold_ids":["K001"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"TK-0002","gold_ids":["K003"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"TK-0003","gold_ids":["K006"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"TK-0004","gold_ids":["K007"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"TK-0005","gold_ids":["K008"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"TK-0006","gold_ids":["K009"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"TK-0007","gold_ids":["K010"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"TK-0008","gold_ids":["K011"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"TK-0009","gold_ids":["K012"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"TK-0010","gold_ids":["K013"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"TK-0011","gold_ids":["K014"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"TK-0012","gold_ids":["K015"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"TK-0013","gold_ids":["K016"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"TK-0014","gold_ids":["K020"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"TK-0015","gold_ids":["K028"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"TK-0016","gold_ids":["K030"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"TK-0017","gold_ids":["K032"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"TK-0018","gold_ids":["K034"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"TK-0019","gold_ids":["K036"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"TK-0020","gold_ids":["K037"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"TK-0021","gold_ids":["K038"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"TK-0022","gold_ids":["K055"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"TK-0023","gold_ids":["K057"],"related_gold_ids":[],"noise_kind":null,"issue_category":null}
+{"doc_id":"TK-0024","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0025","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0026","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0027","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"TK-0028","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0029","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0030","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0031","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"TK-0032","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0033","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0034","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0035","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0036","gold_ids":[],"related_gold_ids":["K001"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"TK-0037","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0038","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0039","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0040","gold_ids":[],"related_gold_ids":["K003"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"TK-0041","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0042","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0043","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0044","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0045","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0046","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0047","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0048","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0049","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0050","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0051","gold_ids":[],"related_gold_ids":["K059"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0052","gold_ids":[],"related_gold_ids":["K013"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0053","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0054","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0055","gold_ids":[],"related_gold_ids":["K005"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0056","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0057","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0058","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0059","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0060","gold_ids":[],"related_gold_ids":["K050"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0061","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0062","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0063","gold_ids":[],"related_gold_ids":["K023"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0064","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0065","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0066","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0067","gold_ids":[],"related_gold_ids":["K050"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0068","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0069","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0070","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0071","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0072","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0073","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0074","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0075","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0076","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0077","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0078","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0079","gold_ids":[],"related_gold_ids":["K042"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"TK-0080","gold_ids":[],"related_gold_ids":["K008"],"noise_kind":"repeat","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0081","gold_ids":[],"related_gold_ids":["K009"],"noise_kind":"repeat","issue_category":"망연계"}
+{"doc_id":"TK-0082","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0083","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0084","gold_ids":[],"related_gold_ids":["K027"],"noise_kind":"repeat","issue_category":"망연계"}
+{"doc_id":"TK-0085","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0086","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0087","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0088","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"TK-0089","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0090","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0091","gold_ids":[],"related_gold_ids":["K021"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"TK-0092","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0093","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0094","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0095","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0096","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0097","gold_ids":[],"related_gold_ids":["K021"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"TK-0098","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0099","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0100","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0101","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"TK-0102","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0103","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0104","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0105","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"TK-0106","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0107","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0108","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0109","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0110","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0111","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0112","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0113","gold_ids":[],"related_gold_ids":["K055"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"TK-0114","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"TK-0115","gold_ids":[],"related_gold_ids":["K057"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"TK-0116","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0117","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0118","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0119","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0120","gold_ids":[],"related_gold_ids":["K034"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"TK-0121","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0122","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0123","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0124","gold_ids":[],"related_gold_ids":["K025"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0125","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0126","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0127","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0128","gold_ids":[],"related_gold_ids":["K005"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0129","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0130","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0131","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0132","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0133","gold_ids":[],"related_gold_ids":["K049"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"TK-0134","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0135","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0136","gold_ids":[],"related_gold_ids":["K008"],"noise_kind":"repeat","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0137","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0138","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0139","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0140","gold_ids":[],"related_gold_ids":["K001"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"TK-0141","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0142","gold_ids":[],"related_gold_ids":["K026"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0143","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0144","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0145","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0146","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0147","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0148","gold_ids":[],"related_gold_ids":["K021"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"TK-0149","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0150","gold_ids":[],"related_gold_ids":["K013"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0151","gold_ids":[],"related_gold_ids":["K052"],"noise_kind":"repeat","issue_category":"기타"}
+{"doc_id":"TK-0152","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0153","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0154","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0155","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0156","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0157","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0158","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0159","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0160","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0161","gold_ids":[],"related_gold_ids":["K022"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0162","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0163","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0164","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0165","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0166","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0167","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0168","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0169","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0170","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0171","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0172","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0173","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0174","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0175","gold_ids":[],"related_gold_ids":["K023"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0176","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0177","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0178","gold_ids":[],"related_gold_ids":["K014"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0179","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0180","gold_ids":[],"related_gold_ids":["K059"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0181","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0182","gold_ids":[],"related_gold_ids":["K001"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"TK-0183","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0184","gold_ids":[],"related_gold_ids":["K001"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"TK-0185","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0186","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0187","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0188","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0189","gold_ids":[],"related_gold_ids":["K019"],"noise_kind":"repeat","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0190","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0191","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0192","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0193","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0194","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0195","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0196","gold_ids":[],"related_gold_ids":["K021"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"TK-0197","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0198","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0199","gold_ids":[],"related_gold_ids":["K012"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0200","gold_ids":[],"related_gold_ids":["K022"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0201","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0202","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0203","gold_ids":[],"related_gold_ids":["K060"],"noise_kind":"repeat","issue_category":"망연계"}
+{"doc_id":"TK-0204","gold_ids":[],"related_gold_ids":["K058"],"noise_kind":"repeat","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0205","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0206","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0207","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0208","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0209","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0210","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0211","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0212","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0213","gold_ids":[],"related_gold_ids":["K053"],"noise_kind":"repeat","issue_category":"망연계"}
+{"doc_id":"TK-0214","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0215","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"TK-0216","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"TK-0217","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0218","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0219","gold_ids":[],"related_gold_ids":["K039"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"TK-0220","gold_ids":[],"related_gold_ids":["K001"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"TK-0221","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0222","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0223","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0224","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0225","gold_ids":[],"related_gold_ids":["K050"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0226","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0227","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0228","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0229","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0230","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0231","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0232","gold_ids":[],"related_gold_ids":["K022"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0233","gold_ids":[],"related_gold_ids":["K004"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"TK-0234","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0235","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0236","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0237","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0238","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0239","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0240","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0241","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0242","gold_ids":[],"related_gold_ids":["K037"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"TK-0243","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0244","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0245","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0246","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0247","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0248","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"TK-0249","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0250","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0251","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0252","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0253","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0254","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0255","gold_ids":[],"related_gold_ids":["K001"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"TK-0256","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0257","gold_ids":[],"related_gold_ids":["K005"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0258","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0259","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0260","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0261","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0262","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0263","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0264","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"TK-0265","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0266","gold_ids":[],"related_gold_ids":["K044"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"TK-0267","gold_ids":[],"related_gold_ids":["K011"],"noise_kind":"repeat","issue_category":"기타"}
+{"doc_id":"TK-0268","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0269","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0270","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0271","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0272","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0273","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0274","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0275","gold_ids":[],"related_gold_ids":["K026"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0276","gold_ids":[],"related_gold_ids":["K016"],"noise_kind":"repeat","issue_category":"기타"}
+{"doc_id":"TK-0277","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0278","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0279","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0280","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"TK-0281","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0282","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0283","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0284","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"TK-0285","gold_ids":[],"related_gold_ids":["K047"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"TK-0286","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0287","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0288","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0289","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0290","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0291","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0292","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0293","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0294","gold_ids":[],"related_gold_ids":["K001"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"TK-0295","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0296","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0297","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0298","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0299","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0300","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0301","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0302","gold_ids":[],"related_gold_ids":["K021"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"TK-0303","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0304","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0305","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0306","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0307","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0308","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0309","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0310","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0311","gold_ids":[],"related_gold_ids":["K010"],"noise_kind":"repeat","issue_category":"기타"}
+{"doc_id":"TK-0312","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0313","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"TK-0314","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0315","gold_ids":[],"related_gold_ids":["K021"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"TK-0316","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0317","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0318","gold_ids":[],"related_gold_ids":["K027"],"noise_kind":"repeat","issue_category":"망연계"}
+{"doc_id":"TK-0319","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0320","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0321","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0322","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0323","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0324","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0325","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0326","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0327","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0328","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0329","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0330","gold_ids":[],"related_gold_ids":["K006"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0331","gold_ids":[],"related_gold_ids":["K026"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0332","gold_ids":[],"related_gold_ids":["K039"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"TK-0333","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0334","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0335","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0336","gold_ids":[],"related_gold_ids":["K006"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0337","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0338","gold_ids":[],"related_gold_ids":["K007"],"noise_kind":"repeat","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0339","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0340","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"TK-0341","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0342","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0343","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0344","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0345","gold_ids":[],"related_gold_ids":["K001"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"TK-0346","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0347","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0348","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0349","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0350","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0351","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0352","gold_ids":[],"related_gold_ids":["K053"],"noise_kind":"repeat","issue_category":"망연계"}
+{"doc_id":"TK-0353","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0354","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0355","gold_ids":[],"related_gold_ids":["K050"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0356","gold_ids":[],"related_gold_ids":["K041"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"TK-0357","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0358","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0359","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0360","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0361","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0362","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0363","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0364","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0365","gold_ids":[],"related_gold_ids":["K019"],"noise_kind":"repeat","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0366","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0367","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0368","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0369","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0370","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0371","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0372","gold_ids":[],"related_gold_ids":["K021"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"TK-0373","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0374","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0375","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0376","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0377","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0378","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0379","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0380","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0381","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0382","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0383","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0384","gold_ids":[],"related_gold_ids":["K022"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0385","gold_ids":[],"related_gold_ids":["K006"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0386","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0387","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0388","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0389","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0390","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0391","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0392","gold_ids":[],"related_gold_ids":["K006"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0393","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0394","gold_ids":[],"related_gold_ids":["K049"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"TK-0395","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0396","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0397","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0398","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0399","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0400","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"TK-0401","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0402","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0403","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0404","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0405","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0406","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0407","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0408","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0409","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0410","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0411","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0412","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0413","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"TK-0414","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0415","gold_ids":[],"related_gold_ids":["K042"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"TK-0416","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0417","gold_ids":[],"related_gold_ids":["K009"],"noise_kind":"repeat","issue_category":"망연계"}
+{"doc_id":"TK-0418","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0419","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0420","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0421","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0422","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0423","gold_ids":[],"related_gold_ids":["K007"],"noise_kind":"repeat","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0424","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0425","gold_ids":[],"related_gold_ids":["K058"],"noise_kind":"repeat","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0426","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0427","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0428","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0429","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0430","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0431","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0432","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0433","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0434","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0435","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0436","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0437","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0438","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0439","gold_ids":[],"related_gold_ids":["K025"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0440","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0441","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0442","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0443","gold_ids":[],"related_gold_ids":["K024"],"noise_kind":"repeat","issue_category":"기타"}
+{"doc_id":"TK-0444","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0445","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0446","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0447","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0448","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0449","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0450","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0451","gold_ids":[],"related_gold_ids":["K014"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0452","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0453","gold_ids":[],"related_gold_ids":["K028"],"noise_kind":"repeat","issue_category":"권한 신청"}
+{"doc_id":"TK-0454","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0455","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0456","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0457","gold_ids":[],"related_gold_ids":["K005"],"noise_kind":"repeat","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0458","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0459","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0460","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0461","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0462","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0463","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0464","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0465","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0466","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0467","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0468","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0469","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"TK-0470","gold_ids":[],"related_gold_ids":["K012"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0471","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0472","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0473","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0474","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0475","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0476","gold_ids":[],"related_gold_ids":["K014"],"noise_kind":"repeat","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0477","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0478","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0479","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0480","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0481","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0482","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0483","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"TK-0484","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0485","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0486","gold_ids":[],"related_gold_ids":["K021"],"noise_kind":"repeat","issue_category":"VPN"}
+{"doc_id":"TK-0487","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0488","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0489","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"메일·그룹웨어"}
+{"doc_id":"TK-0490","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0491","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"권한 신청"}
+{"doc_id":"TK-0492","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"망연계"}
+{"doc_id":"TK-0493","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"보안 프로그램"}
+{"doc_id":"TK-0494","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"기타"}
+{"doc_id":"TK-0495","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}
+{"doc_id":"TK-0496","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0497","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"VPN"}
+{"doc_id":"TK-0498","gold_ids":[],"related_gold_ids":["K002"],"noise_kind":"repeat","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0499","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"계정 잠금·비밀번호"}
+{"doc_id":"TK-0500","gold_ids":[],"related_gold_ids":[],"noise_kind":"general","issue_category":"MFA·SSO 인증"}

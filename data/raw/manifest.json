@@ -1,0 +1,128 @@
+{
+  "generated_at": "2026-11-25T07:17:07+00:00",
+  "synthetic": true,
+  "seed": 42,
+  "llm": {
+    "chat_deployment": "gpt-5.4-mini",
+    "reasoning_effort": "low",
+    "reasoning_effort_by_stage": {
+      "gold": "low",
+      "render_docs": "low",
+      "render_noise": "low"
+    }
+  },
+  "usage": {
+    "stages": {
+      "gold": {
+        "usage_log": "data/generated/gold_usage.jsonl",
+        "prompt_tokens": 169403,
+        "cached_tokens": 88832,
+        "completion_tokens": 43482,
+        "reasoning_tokens": 8553,
+        "calls": 18,
+        "dry_run_calls": 2,
+        "cost_usd": 0.251238,
+        "calls_without_price": 1
+      },
+      "render_docs": {
+        "usage_log": "data/generated/docs_usage.jsonl",
+        "prompt_tokens": 157969,
+        "cached_tokens": 3840,
+        "completion_tokens": 51173,
+        "reasoning_tokens": 7708,
+        "calls": 116,
+        "dry_run_calls": 1,
+        "cost_usd": 0.346163,
+        "calls_without_price": 0
+      },
+      "render_noise": {
+        "usage_log": "data/generated/noise_usage.jsonl",
+        "prompt_tokens": 686121,
+        "cached_tokens": 35072,
+        "completion_tokens": 286540,
+        "reasoning_tokens": 24869,
+        "calls": 398,
+        "dry_run_calls": 9,
+        "cost_usd": 1.780347,
+        "calls_without_price": 0
+      }
+    },
+    "total": {
+      "prompt_tokens": 1013493,
+      "cached_tokens": 127744,
+      "completion_tokens": 381195,
+      "reasoning_tokens": 41130,
+      "calls": 532,
+      "dry_run_calls": 12,
+      "cost_usd": 2.377748,
+      "calls_without_price": 1
+    }
+  },
+  "usage_note": "usage 로그 전체 합산 (dry-run·재시도 호출 포함). cost_usd는 단가가 설정된 호출만 합산 (calls_without_price 참고)",
+  "inputs_sha256": {
+    "data/world/world.yaml": "6b31d1d3a88d306424b59a10d1ec03e2e24ddf0b22618b50a629df505cfefa20",
+    "data/gold/knowledge": "d3d00266faecf7e42ff9072e3f9a501eb05ff268b73eef20fc9ca371e05f5a27",
+    "data/generated/users.jsonl": "2e65a32fab8f9c5540ca409b37490a1984da9d452c123d978cdeb3e170c6eaf4"
+  },
+  "prompt_templates_sha256": {
+    "scripts/datagen/generate_gold.py": {
+      "sha256": "f410d411ef49d7aaf3fb7a3c1d025a31573db95ddcd26e3d6c7d9f6746904de8",
+      "components": [
+        "_COMMON_RULES",
+        "_TYPE_RULES",
+        "build_messages"
+      ]
+    },
+    "scripts/datagen/render_docs.py": {
+      "sha256": "519a3a5a4af615fabaeeaad610ad0f707eb30b1a0ab72571cb55da4a1d0dd941",
+      "components": [
+        "_SYSTEM_RULES",
+        "_STYLE",
+        "_ROLE_NOTE",
+        "build_messages",
+        "_date_section"
+      ]
+    },
+    "scripts/datagen/render_noise.py": {
+      "sha256": "d2a3f4b6064b0e824b2afd06e0a3bab5b16dd1353810c9a6db4a595b68cb4c0f",
+      "components": [
+        "_SYSTEM_RULES",
+        "_STYLE",
+        "build_messages",
+        "situation_block",
+        "_outcome",
+        "_date_line"
+      ]
+    }
+  },
+  "hash_note": "텍스트 파일은 CRLF를 LF로 바꾼 뒤 해시, 디렉터리는 파일명 순으로 이름+내용을 해시",
+  "documents": {
+    "slack": 300,
+    "ticket": 500,
+    "guide": 40,
+    "minutes": 20,
+    "total": 860
+  },
+  "pii": {
+    "target_ratio": {
+      "slack": 0.4,
+      "ticket": 0.6,
+      "guide": 0.0,
+      "minutes": 0.0
+    },
+    "documents": {
+      "slack": 120,
+      "ticket": 300
+    },
+    "documents_total": 420,
+    "by_type": {
+      "phone": 125,
+      "email": 120,
+      "employee_no": 129,
+      "internal_ip": 134,
+      "pc_name": 134
+    },
+    "values_total": 642
+  },
+  "category_ratio_source": "assumed (not real statistics)"
+}
