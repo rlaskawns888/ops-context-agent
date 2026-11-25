@@ -475,6 +475,11 @@ _UNSUPPORTED_KEYWORDS = frozenset({"format", "default", "minLength", "maxLength"
 
 def response_json_schema(source_type: SourceType) -> dict[str, Any]:
     """source_type별 draft 모델의 strict JSON 스키마 (Azure OpenAI response_format용)."""
+    return strict_json_schema(DRAFT_MODELS[source_type])
+
+
+def strict_json_schema(model: type[BaseModel]) -> dict[str, Any]:
+    """pydantic 모델의 strict JSON 스키마 (Azure OpenAI 미지원 키워드 제거)."""
 
     def strip(node: Any) -> Any:
         if isinstance(node, dict):
@@ -487,7 +492,6 @@ def response_json_schema(source_type: SourceType) -> dict[str, Any]:
             return [strip(v) for v in node]
         return node
 
-    model = DRAFT_MODELS[source_type]
     return strip(model.model_json_schema(schema_generator=StrictJsonSchema))
 
 

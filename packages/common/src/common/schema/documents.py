@@ -7,6 +7,12 @@ data/generated/{slack,ticket,guide,minutes}.jsonl에 저장한다.
 - doc_id 형식: SL-0001(slack), TK-0001(ticket), GD-001(guide), MN-001(minutes)
 - gold_ids는 이 원문이 담고 있는 gold id 목록이다. **평가용 숨김 라벨**이라 적재·추출 단계에서
   LLM 입력에 넣지 않는다.
+- 노이즈 문서(scripts/datagen/render_noise.py, noise_kind가 있음)는 gold_ids가 비어 있다.
+  related_gold_ids·issue_category·noise_kind·plan_id도 숨김 라벨이다.
+  - related_gold_ids: 재문의(repeat) 노이즈가 다시 묻는 gold id
+  - issue_category: 문의 분류 (계정 잠금·비밀번호, VPN 등). Ticket.category(장애·계정 등)와는
+    별개라 이름을 달리 둔다
+  - plan_id: noise_plan.jsonl 항목 id (재실행 시 건너뛰기용)
 - author_user_ids는 원문에 등장하는 사용자(users.jsonl의 user_id)다.
 - 날짜는 시간대 없는 KST 기준 값으로 둔다.
 
@@ -43,6 +49,7 @@ DOC_ID_PREFIX: dict[SourceType, tuple[str, int]] = {
 
 TicketCategory = Literal["장애", "계정", "권한신청", "문의"]
 TicketStatus = Literal["RESOLVED", "REJECTED"]
+NoiseKind = Literal["general", "repeat", "unresolved"]
 
 
 def format_doc_id(source_type: SourceType, number: int) -> str:
@@ -87,15 +94,37 @@ class _DocumentBase(_Model):
     source_type: SourceType
     created_at: datetime
     title: NonBlankStr
-    gold_ids: list[str] = Field(min_length=1, description="평가용 숨김 라벨")
+    gold_ids: list[str] = Field(default_factory=list, description="평가용 숨김 라벨")
     author_user_ids: list[str] = Field(min_length=1)
+    related_gold_ids: list[str] = Field(default_factory=list, description="평가용 숨김 라벨")
+    issue_category: str | None = None
+    noise_kind: NoiseKind | None = None
+    plan_id: str | None = None
 
     @model_validator(mode="after")
     def _check_ids(self) -> Self:
         if not re.match(DOC_ID_PATTERNS[self.source_type], self.doc_id):
             raise ValueError(f"doc_id {self.doc_id!r} 형식이 {self.source_type}와 맞지 않습니다")
-        if len(set(self.gold_ids)) != len(self.gold_ids):
-            raise ValueError("gold_ids에 중복 값이 있습니다")
+        for name in ("gold_ids", "related_gold_ids"):
+            ids = getattr(self, name)
+            if len(set(ids)) != len(ids):
+                raise ValueError(f"{name}에 중복 값이 있습니다")
+        if self.noise_kind is None:
+            if not self.gold_ids:
+                raise ValueError("gold 원문은 gold_ids가 1개 이상이어야 합니다")
+            if self.plan_id is not None:
+                raise ValueError("gold 원문에는 plan_id를 두지 않습니다")
+        else:
+            if self.gold_ids:
+                raise ValueError(
+                    "노이즈 문서는 gold_ids가 비어 있어야 합니다 (related_gold_ids 사용)"
+                )
+            if self.plan_id is None:
+                raise ValueError("노이즈 문서는 plan_id가 필요합니다")
+            if (self.noise_kind == "repeat") != bool(self.related_gold_ids):
+                raise ValueError(
+                    "related_gold_ids는 repeat 노이즈에만, 그리고 반드시 있어야 합니다"
+                )
         return self
 
     def text_fields(self) -> Iterator[str]:
